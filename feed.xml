@@ -5,7 +5,7 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-09-25T09:49:26-0500</updated>
+  <updated>2026-09-25T09:50:35-0500</updated>
   <author><name>Matt</name></author>
     <entry>
     <title>Yada yada yada</title>
@@ -64,6 +64,15 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;“The cocktail is actually a classic: the Frisco,” he responded, adding that it should be made with an ounce and half of rye, a half-ounce of Bénédictine and a half-ounce of freshly squeezed lemon juice, all shaken with ice and then strained into a coupe glass. “We’ve played with quite a few ratios and ingredients, and this one just works. Sometimes the classics just don’t need improvement.”&lt;/p&gt;
 &lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Local AI Needs to be the Norm</title>
+    <link href="https://unix.foo/posts/local-ai-needs-to-be-norm/"/>
+    <id>https://somethinglater.com/links/2026/05/local-ai-needs-to-be-the-norm/</id>
+    <published>2026-05-20T05:50:29-0500</published>
+    <updated>2026-09-25T09:50:35-0500</updated>
+    <content type="html">&lt;p&gt;As long as we’re going to have to live with this genie, I’m still convinced for all sorts of reasons that this is the way things should go. Unfortunately we’re not quite there yet outside of “simple” use cases like summarizing content.&lt;/p&gt;
 </content>
   </entry>
 </feed>
