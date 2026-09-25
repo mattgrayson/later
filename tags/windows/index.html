@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>windows · Something Later</title>
+  <meta name="description" content="I should be extremely happy in your company.">    <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-title"><a href="/">Something Later</a></p>
+    <p class="site-subtitle">I should be extremely happy in your company.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/archive/">Archive</a>
+      <a href="/books/">Books</a>
+      <a href="/tags/">Tags</a>
+      <a href="/feed.xml">Feed</a>
+    </nav>
+  </header>
+  <main>
+<h1 class="page-title">Tagged “windows”</h1>
+<article class="entry entry-link">
+  <h2><a href="https://taoofmac.com/space/protocols/rdp">RDP H.264/AVC Acceleration up to 60 fps</a> <a class="permalink" href="/links/2022/10/rdp-h264avc-acceleration-up-to-60-fps/">∞</a></h2>
+  <p>On Windows 10/Server 2016 and above, you can enable nearly 60fps connections between clients using H.264, which considerably improves the user experience.</p>
+<ol>
+<li>Run gpedit.msc</li>
+<li>Go to Computer Configuration -&gt; Administrative Templates -&gt; Windows Components -&gt; Remote Desktop Services -&gt; Remote Desktop Session Host -&gt; Remote Session Environment
+<ol>
+<li>Enable Prioritize H.264/AVC 444 Graphics mode for Remote Desktop</li>
+<li>Enable Configure H.264/AVC hardware encoding for Remote Desktop</li>
+</ol>
+</li>
+<li>Run gpupdate /force</li>
+<li>Run regedit</li>
+<li>Create a DWORD(32-bit) key named “DWMFRAMEINTERVAL” under HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations with the value 15 (decimal).</li>
+</ol>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2022/10/rdp-h264avc-acceleration-up-to-60-fps/"><time datetime="2022-10-24T11:35:00-0500">October 24, 2022</time></a> · <a href="/tags/admin/">admin</a>, <a href="/tags/rdp/">rdp</a>, <a href="/tags/remote/">remote</a>, <a href="/tags/sys/">sys</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://github.com/win-acme/win-acme">win-acme/win-acme: A simple ACME client for Windows (for use with Let&#39;s Encrypt et al.)</a> <a class="permalink" href="/links/2021/04/win-acmewin-acme-a-simple-acme-client-for-windows-for-use-with-lets-encrypt-et-al/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2021/04/win-acmewin-acme-a-simple-acme-client-for-windows-for-use-with-lets-encrypt-et-al/"><time datetime="2021-04-12T10:26:00-0500">April 12, 2021</time></a> · <a href="/tags/https/">https</a>, <a href="/tags/letsencrypt/">letsencrypt</a>, <a href="/tags/ssl/">ssl</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://explorerplusplus.com/">Explorer++ - A small and fast file manager for Windows</a> <a class="permalink" href="/links/2021/03/explorer-a-small-and-fast-file-manager-for-windows/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2021/03/explorer-a-small-and-fast-file-manager-for-windows/"><time datetime="2021-03-28T18:52:00-0500">March 28, 2021</time></a> · <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://www.virtuallyghetto.com/2020/08/other-intel-and-amd-small-form-factor-sff-systems-for-vsphere-homelabs.html">Other Intel and AMD small form factor (SFF) systems for vSphere Homelabs</a> <a class="permalink" href="/links/2020/09/other-intel-and-amd-small-form-factor-sff-systems-for-vsphere-homelabs/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2020/09/other-intel-and-amd-small-form-factor-sff-systems-for-vsphere-homelabs/"><time datetime="2020-09-12T07:41:00-0500">September 12, 2020</time></a> · <a href="/tags/esxi/">esxi</a>, <a href="/tags/linux/">linux</a>, <a href="/tags/virtualization/">virtualization</a>, <a href="/tags/vmware/">vmware</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://github.com/Disassembler0/Win10-Initial-Setup-Script">Win10-Initial-Setup-Script</a> <a class="permalink" href="/links/2019/11/win10-initial-setup-script-2/">∞</a></h2>
+  <p>PowerShell script for automation of routine tasks done after fresh installations of Windows 10 / Server 2016 / Server 2019</p>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2019/11/win10-initial-setup-script-2/"><time datetime="2019-11-19T16:54:00-0600">November 19, 2019</time></a> · <a href="/tags/devops/">devops</a>, <a href="/tags/powershell/">powershell</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://docs.microsoft.com/en-us/windows-server/get-started/sconfig-on-ws2016#to-enable-remote-management">How to change Windows Update settings using SCONFIG</a> <a class="permalink" href="/links/2019/09/how-to-change-windows-update-settings-using-sconfig/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2019/09/how-to-change-windows-update-settings-using-sconfig/"><time datetime="2019-09-11T19:00:00-0500">September 11, 2019</time></a> · <a href="/tags/devops/">devops</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://github.com/billziss-gh/sshfs-win">SSHFS-Win</a> <a class="permalink" href="/links/2019/07/sshfs-win/">∞</a></h2>
+  <p>Minimal port of SSHFS to Windows; uses Cygwin for the POSIX environment and WinFsp for the FUSE functionality.</p>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2019/07/sshfs-win/"><time datetime="2019-07-23T08:10:00-0500">July 23, 2019</time></a> · <a href="/tags/filesystems/">filesystems</a>, <a href="/tags/networking/">networking</a>, <a href="/tags/ssh/">ssh</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://github.com/Disassembler0/Win10-Initial-Setup-Script">Win10-Initial-Setup-Script</a> <a class="permalink" href="/links/2019/07/win10-initial-setup-script/">∞</a></h2>
+  <p>PowerShell script for automation of routine tasks done after fresh installations of Windows 10 / Server 2016 / Server 2019</p>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2019/07/win10-initial-setup-script/"><time datetime="2019-07-20T20:29:00-0500">July 20, 2019</time></a> · <a href="/tags/powershell/">powershell</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://serverfault.com/a/333584">How to Setup Local Host Networking with VirtualBox</a> <a class="permalink" href="/links/2019/07/how-to-setup-local-host-networking-with-virtualbox/">∞</a></h2>
+  <ol>
+<li>
+<p>Setup the virtualbox to use 2 adapters:</p>
+<ul>
+<li>The first adapter is set to NAT (that will give you the internet connection).</li>
+<li>The second adapter is set to host only.</li>
+</ul>
+</li>
+<li>
+<p>Start the virtual machine and assign a static IP for the second adapter in Ubuntu (for instance 192.168.56.56). The host Windows will have 192.168.56.1 as IP for the internal network (VirtualBox Host-Only Network is the name in network connections in Windows). What this will give you is being able to access the apache server on ubuntu, from windows, by going to 192.168.56.56. Also, Ubuntu will have internet access, since the first adapter (set to NAT) will take care of that.</p>
+</li>
+<li>
+<p>Now, to make the connection available both ways (accessing the windows host from the ubuntu guest) there’s still one more step to be performed. Windows will automatically add the virtualbox host-only network to the list of public networks and that cannot be changed. This entails that the firewall will prevent proper access.</p>
+</li>
+<li>
+<p>To overcome this and not make any security breaches in your setup:</p>
+<ul>
+<li>go to the windows firewall section, in control panel,</li>
+<li>click on advanced settings. In the page that pops up,</li>
+<li>click on inbound rules (left column), then on new rule (right column). Chose custom rule, set the rule to allow all programs, and any protocol. For the scope, add in the first box (local IP addresses) 192.168.56.1, and in the second box (remote IP) 192.168.56.56. Click next, select allow the connection, next, check all profiles, next, give it a name and save.</li>
+</ul>
+</li>
+</ol>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2019/07/how-to-setup-local-host-networking-with-virtualbox/"><time datetime="2019-07-18T19:00:00-0500">July 18, 2019</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://devblogs.microsoft.com/premier-developer/running-docker-windows-and-linux-containers-simultaneously/">Running Docker Windows and Linux Containers Simultaneously | Premier Developer</a> <a class="permalink" href="/links/2019/03/running-docker-windows-and-linux-containers-simultaneously-premier-developer/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2019/03/running-docker-windows-and-linux-containers-simultaneously-premier-developer/"><time datetime="2019-03-28T12:46:00-0500">March 28, 2019</time></a> · <a href="/tags/docker/">docker</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://stackoverflow.com/questions/35064964/powershell-script-to-check-if-service-is-started-if-not-then-start-it/35065826#35065826">Powershell script to check if service is started, if not then start it - Stack Overflow</a> <a class="permalink" href="/links/2019/03/powershell-script-to-check-if-service-is-started-if-not-then-start-it-stack-overflow/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2019/03/powershell-script-to-check-if-service-is-started-if-not-then-start-it-stack-overflow/"><time datetime="2019-03-12T10:36:00-0500">March 12, 2019</time></a> · <a href="/tags/powershell/">powershell</a>, <a href="/tags/sysadmin/">sysadmin</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://blog.sixeyed.com/relay-iis-log-entries-to-read-them-in-docker/">Relay IIS Log Entries to the Console and Read Them in Docker | Elton Stoneman</a> <a class="permalink" href="/links/2019/03/relay-iis-log-entries-to-the-console-and-read-them-in-docker-elton-stoneman/">∞</a></h2>
+  <p>Docker happily runs IIS in a Windows Container, but it doesn’t surface any log entries. This shows you how to relay logs from IIS to Docker.</p>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2019/03/relay-iis-log-entries-to-the-console-and-read-them-in-docker-elton-stoneman/"><time datetime="2019-03-07T13:25:00-0600">March 7, 2019</time></a> · <a href="/tags/docker/">docker</a>, <a href="/tags/iis/">iis</a>, <a href="/tags/logs/">logs</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://stackoverflow.com/questions/49688700/why-does-docker-for-windows-make-you-pick-either-windows-or-linux-containers">Why does Docker for Windows make you pick either Windows or Linux containers? - Stack Overflow</a> <a class="permalink" href="/links/2019/03/why-does-docker-for-windows-make-you-pick-either-windows-or-linux-containers-stack-overflow/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2019/03/why-does-docker-for-windows-make-you-pick-either-windows-or-linux-containers-stack-overflow/"><time datetime="2019-03-06T16:30:00-0600">March 6, 2019</time></a> · <a href="/tags/containers/">containers</a>, <a href="/tags/docker/">docker</a>, <a href="/tags/lcow/">lcow</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://docs.microsoft.com/en-us/virtualization/windowscontainers/deploy-containers/linux-containers#when-to-use-moby-vm-vs-lcow">Linux Containers on Windows | Microsoft Docs</a> <a class="permalink" href="/links/2019/03/linux-containers-on-windows-microsoft-docs/">∞</a></h2>
+  <p>Right now, we recommend LCOW to people who:</p>
+<ol>
+<li>Want to test our newest technology.</li>
+<li>Run Windows and Linux containers at the same time.</li>
+<li>Need kernel isolation (Hyper-V isolation) between Linux containers.</li>
+</ol>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2019/03/linux-containers-on-windows-microsoft-docs/"><time datetime="2019-03-06T16:16:00-0600">March 6, 2019</time></a> · <a href="/tags/containers/">containers</a>, <a href="/tags/docker/">docker</a>, <a href="/tags/linux/">linux</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://docs.microsoft.com/en-us/powershell/windows/get-started?view=win10-ps">Windows 10 and Windows Server 2016 | Microsoft Docs</a> <a class="permalink" href="/links/2019/02/windows-10-and-windows-server-2016-microsoft-docs/">∞</a></h2>
+  <p>Use this topic to help manage Windows and Windows Server technologies with Windows PowerShell.Windows 10 and Windows Server 2016</p>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2019/02/windows-10-and-windows-server-2016-microsoft-docs/"><time datetime="2019-02-28T08:53:00-0600">February 28, 2019</time></a> · <a href="/tags/iis/">iis</a>, <a href="/tags/powershell/">powershell</a>, <a href="/tags/server/">server</a>, <a href="/tags/sysadmin/">sysadmin</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://docs.docker.com/docker-for-windows/">Get started with Docker for Windows | Docker Documentation</a> <a class="permalink" href="/links/2019/02/get-started-with-docker-for-windows-docker-documentation/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2019/02/get-started-with-docker-for-windows-docker-documentation/"><time datetime="2019-02-25T15:30:00-0600">February 25, 2019</time></a> · <a href="/tags/containers/">containers</a>, <a href="/tags/docker/">docker</a>, <a href="/tags/virtualization/">virtualization</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://socket3.wordpress.com/2018/02/03/designing-windows-95s-user-interface/">Designing Windows 95’s User Interface – Socket 3</a> <a class="permalink" href="/links/2018/03/designing-windows-95s-user-interface-socket-3/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2018/03/designing-windows-95s-user-interface-socket-3/"><time datetime="2018-03-01T07:07:00-0600">March 1, 2018</time></a> · <a href="/tags/design/">design</a>, <a href="/tags/history/">history</a>, <a href="/tags/microsoft/">microsoft</a>, <a href="/tags/ui/">ui</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://www.hanselman.com/blog/AnnouncingRunningRubyOnRailsOnIIS8OrAnythingElseReallyWithTheNewHttpPlatformHandler.aspx">Announcing: Running Ruby on Rails on IIS8 (or anything else, really) with the new HttpPlatformHandler - Scott Hanselman</a> <a class="permalink" href="/links/2017/02/announcing-running-ruby-on-rails-on-iis8-or-anything-else-really-with-the-new-httpplatformhandler-sc/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2017/02/announcing-running-ruby-on-rails-on-iis8-or-anything-else-really-with-the-new-httpplatformhandler-sc/"><time datetime="2017-02-24T07:52:00-0600">February 24, 2017</time></a> · <a href="/tags/iis/">iis</a>, <a href="/tags/rails/">rails</a>, <a href="/tags/ruby/">ruby</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="http://blogs.technet.com/b/heyscriptingguy/archive/2013/02/01/use-powershell-to-create-and-to-use-a-new-event-log.aspx">Use PowerShell to Create and to Use a New Event Log</a> <a class="permalink" href="/links/2015/01/use-powershell-to-create-and-to-use-a-new-event-log/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2015/01/use-powershell-to-create-and-to-use-a-new-event-log/"><time datetime="2015-01-19T06:47:00-0600">January 19, 2015</time></a> · <a href="/tags/eventlog/">eventlog</a>, <a href="/tags/logs/">logs</a>, <a href="/tags/powershell/">powershell</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://mlichtenberg.wordpress.com/2011/02/03/log-parser-rocks-more-than-50-examples/">Log Parser Rocks! More than 50 Examples!</a> <a class="permalink" href="/links/2015/01/log-parser-rocks-more-than-50-examples/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2015/01/log-parser-rocks-more-than-50-examples/"><time datetime="2015-01-19T06:47:00-0600">January 19, 2015</time></a> · <a href="/tags/iis/">iis</a>, <a href="/tags/logs/">logs</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<nav class="pagination">
+  <span>Page 1 of 4</span>
+<a href="/tags/windows/page/2/">Older →</a></nav>
+  </main>
+  <footer class="site-footer">
+    <p>Matt</p>
+  </footer>
+</body>
+</html>

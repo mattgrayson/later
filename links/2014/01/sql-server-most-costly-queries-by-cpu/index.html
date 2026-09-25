@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SQL Server - most costly queries by CPU · Something Later</title>
+<meta name="description" content="Handy SQL snippet to help identify slow queries: SELECT TOP 20 qs.sql_handle, qs.execution_count, qs.total_worker_time AS Total_CPU, total_CPU_inSeconds = --Converted from microseconds qs.total_worke…">
+<link rel="canonical" href="https://somethinglater.com/links/2014/01/sql-server-most-costly-queries-by-cpu/">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-title"><a href="/">Something Later</a></p>
+    <p class="site-subtitle">I should be extremely happy in your company.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/archive/">Archive</a>
+      <a href="/books/">Books</a>
+      <a href="/tags/">Tags</a>
+      <a href="/feed.xml">Feed</a>
+    </nav>
+  </header>
+  <main>
+<article class="entry entry-link">
+  <h1><a href="http://stackoverflow.com/a/945290">SQL Server - most costly queries by CPU</a> <a class="permalink" href="/links/2014/01/sql-server-most-costly-queries-by-cpu/">∞</a></h1>
+  <p>Handy SQL snippet to help identify slow queries:</p>
+<hr />
+<p>SELECT TOP 20</p>
+<pre><code>qs.sql_handle,
+
+qs.execution_count,
+
+qs.total_worker_time AS Total_CPU,
+
+total_CPU_inSeconds = --Converted from microseconds
+
+    qs.total_worker_time/1000000,
+
+average_CPU_inSeconds = --Converted from microseconds
+
+    (qs.total_worker_time/1000000) / qs.execution_count,
+
+qs.total_elapsed_time,
+
+total_elapsed_time_inSeconds = --Converted from microseconds
+
+    qs.total_elapsed_time/1000000,
+</code></pre>
+<p>st.text,</p>
+<p>qp.query_plan</p>
+<p>from</p>
+<pre><code>sys.dm_exec_query_stats as qs
+
+CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) as st
+
+cross apply sys.dm_exec_query_plan (qs.plan_handle) as qp
+</code></pre>
+<p>ORDER BY qs.total_worker_time desc</p>
+<hr />
+
+  <p class="meta">
+  <a class="permalink" href="/links/2014/01/sql-server-most-costly-queries-by-cpu/"><time datetime="2014-01-17T18:00:00-0600">January 17, 2014</time></a> · <a href="/tags/debugging/">debugging</a>, <a href="/tags/sql/">sql</a>, <a href="/tags/sqlserver/">sqlserver</a></p>
+
+</article>
+
+<nav class="neighbors">
+<a href="/links/2014/01/quartznet/">← Quartz.NET</a>  <a class="next" href="/links/2014/01/convert-address-to-latitude-longitude/">Convert Address to Latitude Longitude →</a></nav>
+  </main>
+  <footer class="site-footer">
+    <p>Matt</p>
+  </footer>
+</body>
+</html>

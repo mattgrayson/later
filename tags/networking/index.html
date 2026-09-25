@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>networking · Something Later</title>
+  <meta name="description" content="I should be extremely happy in your company.">    <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-title"><a href="/">Something Later</a></p>
+    <p class="site-subtitle">I should be extremely happy in your company.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/archive/">Archive</a>
+      <a href="/books/">Books</a>
+      <a href="/tags/">Tags</a>
+      <a href="/feed.xml">Feed</a>
+    </nav>
+  </header>
+  <main>
+<h1 class="page-title">Tagged “networking”</h1>
+<article class="entry entry-link">
+  <h2><a href="https://blog.ikuamike.io/posts/2021/netcat/">Netcat - All you need to know :: ikuamike</a> <a class="permalink" href="/links/2021/09/netcat-all-you-need-to-know-ikuamike/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2021/09/netcat-all-you-need-to-know-ikuamike/"><time datetime="2021-09-12T15:58:00-0500">September 12, 2021</time></a> · <a href="/tags/networking/">networking</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://miguelmota.com/blog/getting-started-with-wireguard/">Getting Started with WireGuard</a> <a class="permalink" href="/links/2020/04/getting-started-with-wireguard/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2020/04/getting-started-with-wireguard/"><time datetime="2020-04-07T13:59:00-0500">April 7, 2020</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/vpn/">vpn</a>, <a href="/tags/wireguard/">wireguard</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://www.ericlight.com/wireguard-part-one-installation.html">Wireguard VPN Setup</a> <a class="permalink" href="/links/2020/04/wireguard-vpn-setup/">∞</a></h2>
+  <p>Also <a href="https://www.ericlight.com/wireguard-part-two-vpn-routing.html">https://www.ericlight.com/wireguard-part-two-vpn-routing.html</a></p>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2020/04/wireguard-vpn-setup/"><time datetime="2020-04-06T19:00:00-0500">April 6, 2020</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/vpn/">vpn</a>, <a href="/tags/wireguard/">wireguard</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://github.com/billziss-gh/sshfs-win">SSHFS-Win</a> <a class="permalink" href="/links/2019/07/sshfs-win/">∞</a></h2>
+  <p>Minimal port of SSHFS to Windows; uses Cygwin for the POSIX environment and WinFsp for the FUSE functionality.</p>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2019/07/sshfs-win/"><time datetime="2019-07-23T08:10:00-0500">July 23, 2019</time></a> · <a href="/tags/filesystems/">filesystems</a>, <a href="/tags/networking/">networking</a>, <a href="/tags/ssh/">ssh</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://serverfault.com/a/333584">How to Setup Local Host Networking with VirtualBox</a> <a class="permalink" href="/links/2019/07/how-to-setup-local-host-networking-with-virtualbox/">∞</a></h2>
+  <ol>
+<li>
+<p>Setup the virtualbox to use 2 adapters:</p>
+<ul>
+<li>The first adapter is set to NAT (that will give you the internet connection).</li>
+<li>The second adapter is set to host only.</li>
+</ul>
+</li>
+<li>
+<p>Start the virtual machine and assign a static IP for the second adapter in Ubuntu (for instance 192.168.56.56). The host Windows will have 192.168.56.1 as IP for the internal network (VirtualBox Host-Only Network is the name in network connections in Windows). What this will give you is being able to access the apache server on ubuntu, from windows, by going to 192.168.56.56. Also, Ubuntu will have internet access, since the first adapter (set to NAT) will take care of that.</p>
+</li>
+<li>
+<p>Now, to make the connection available both ways (accessing the windows host from the ubuntu guest) there’s still one more step to be performed. Windows will automatically add the virtualbox host-only network to the list of public networks and that cannot be changed. This entails that the firewall will prevent proper access.</p>
+</li>
+<li>
+<p>To overcome this and not make any security breaches in your setup:</p>
+<ul>
+<li>go to the windows firewall section, in control panel,</li>
+<li>click on advanced settings. In the page that pops up,</li>
+<li>click on inbound rules (left column), then on new rule (right column). Chose custom rule, set the rule to allow all programs, and any protocol. For the scope, add in the first box (local IP addresses) 192.168.56.1, and in the second box (remote IP) 192.168.56.56. Click next, select allow the connection, next, check all profiles, next, give it a name and save.</li>
+</ul>
+</li>
+</ol>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2019/07/how-to-setup-local-host-networking-with-virtualbox/"><time datetime="2019-07-18T19:00:00-0500">July 18, 2019</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://www.oreilly.com/ideas/how-to-tune-your-waf-installation-to-reduce-false-positives">How to tune your WAF installation to reduce false positives</a> <a class="permalink" href="/links/2019/07/how-to-tune-your-waf-installation-to-reduce-false-positives/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2019/07/how-to-tune-your-waf-installation-to-reduce-false-positives/"><time datetime="2019-07-09T10:40:00-0500">July 9, 2019</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/security/">security</a>, <a href="/tags/waf/">waf</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="http://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/">Let&#39;s code a TCP/IP stack, 1: Ethernet &amp; ARP</a> <a class="permalink" href="/links/2018/07/lets-code-a-tcpip-stack-1-ethernet-arp/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2018/07/lets-code-a-tcpip-stack-1-ethernet-arp/"><time datetime="2018-07-03T05:08:00-0500">July 3, 2018</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/programming/">programming</a>, <a href="/tags/tcp/">tcp</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://github.com/ocochard/graphpath">ocochard/graphpath: Graphpath generates an ASCII network diagram from the route table of a Unix/Linux</a> <a class="permalink" href="/links/2018/05/ocochardgraphpath-graphpath-generates-an-ascii-network-diagram-from-the-route-table-of-a-unixlinux/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2018/05/ocochardgraphpath-graphpath-generates-an-ascii-network-diagram-from-the-route-table-of-a-unixlinux/"><time datetime="2018-05-07T09:05:00-0500">May 7, 2018</time></a> · <a href="/tags/bash/">bash</a>, <a href="/tags/networking/">networking</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://www.aircrack-ng.org/doku.php?id=airodump-ng">airodump-ng [Aircrack-ng]</a> <a class="permalink" href="/links/2018/03/airodump-ng-aircrack-ng/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2018/03/airodump-ng-aircrack-ng/"><time datetime="2018-03-09T05:11:00-0600">March 9, 2018</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/security/">security</a>, <a href="/tags/wifi/">wifi</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://www.cisco.com/c/en/us/support/docs/wireless-mobility/80211/200527-Fundamentals-of-802-11-Wireless-Sniffing.html">Fundamentals of 802.11 Wireless Sniffing - Cisco</a> <a class="permalink" href="/links/2018/03/fundamentals-of-80211-wireless-sniffing-cisco/">∞</a></h2>
+  <ol>
+<li>Put wifi device into monitor mode:\nsudo ifconfig wlan1 down \nsudo iwconfig wlan1 mode monitor\nsudo ifconfig wlan1 up\n\n2. Capture beacon broadcasts\nsudo tshark -i wlan1 -f “type mgt subtype beacon”\n\n3. Capture AP probe requests and responses\nsudo tshark -i wlan1 -s 256 -f “type mgt subtype probe-resp or subtype probe-req”\n\nOR\n\nsudo tcpdump -i wlan1 -e -s 256 type mgt subtype probe-resp or subtype probe-req\n\nAlso useful:\nsudo airodump-ng wlan1</li>
+</ol>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2018/03/fundamentals-of-80211-wireless-sniffing-cisco/"><time datetime="2018-03-07T18:58:00-0600">March 7, 2018</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/wifi/">wifi</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="http://robinhenniges.com/en/capture-probe-request-tcpdump-wlan-wifi">Capture WiFi / WLAN / 802.11 Probe Request with tcpdump</a> <a class="permalink" href="/links/2018/02/capture-wifi-wlan-80211-probe-request-with-tcpdump/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2018/02/capture-wifi-wlan-80211-probe-request-with-tcpdump/"><time datetime="2018-02-15T14:27:00-0600">February 15, 2018</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/tcp/">tcp</a>, <a href="/tags/tcpdump/">tcpdump</a>, <a href="/tags/wifi/">wifi</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://www.devdungeon.com/content/packet-capture-injection-and-analysis-gopacket">Packet Capture, Injection, and Analysis with Gopacket</a> <a class="permalink" href="/links/2018/02/packet-capture-injection-and-analysis-with-gopacket/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2018/02/packet-capture-injection-and-analysis-with-gopacket/"><time datetime="2018-02-15T14:26:00-0600">February 15, 2018</time></a> · <a href="/tags/golang/">golang</a>, <a href="/tags/http/">http</a>, <a href="/tags/networking/">networking</a>, <a href="/tags/packets/">packets</a>, <a href="/tags/tcp/">tcp</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://danielmiessler.com/study/tcpdump/">A tcpdump Tutorial and Primer with Examples</a> <a class="permalink" href="/links/2018/02/a-tcpdump-tutorial-and-primer-with-examples-2/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2018/02/a-tcpdump-tutorial-and-primer-with-examples-2/"><time datetime="2018-02-15T14:26:00-0600">February 15, 2018</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/tcp/">tcp</a>, <a href="/tags/tcpdump/">tcpdump</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="http://www.serverframework.com/asynchronousevents/2011/01/time-wait-and-its-design-implications-for-protocols-and-scalable-servers.html">TIME_WAIT and its design implications for protocols and scalable client server systems - AsynchronousEvents</a> <a class="permalink" href="/links/2016/11/time-wait-and-its-design-implications-for-protocols-and-scalable-client-server-systems-asynchronouse/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2016/11/time-wait-and-its-design-implications-for-protocols-and-scalable-client-server-systems-asynchronouse/"><time datetime="2016-11-23T14:00:00-0600">November 23, 2016</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/tcpip/">tcpip</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://passingcuriosity.com/2013/dnsmasq-dev-osx/">Using Dnsmasq for local development on OS X - Passing Curiosity</a> <a class="permalink" href="/links/2016/11/using-dnsmasq-for-local-development-on-os-x-passing-curiosity/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2016/11/using-dnsmasq-for-local-development-on-os-x-passing-curiosity/"><time datetime="2016-11-02T18:55:00-0500">November 2, 2016</time></a> · <a href="/tags/development/">development</a>, <a href="/tags/dns/">dns</a>, <a href="/tags/mac/">mac</a>, <a href="/tags/networking/">networking</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="http://www.devdungeon.com/content/packet-capture-injection-and-analysis-gopacket">Packet Capture, Injection, and Analysis with Gopacket | DevDungeon</a> <a class="permalink" href="/links/2016/10/packet-capture-injection-and-analysis-with-gopacket-devdungeon/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2016/10/packet-capture-injection-and-analysis-with-gopacket-devdungeon/"><time datetime="2016-10-04T19:31:00-0500">October 4, 2016</time></a> · <a href="/tags/golang/">golang</a>, <a href="/tags/networking/">networking</a>, <a href="/tags/tcp/">tcp</a>, <a href="/tags/wifi/">wifi</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://github.com/secdev/scapy/">Scapy: the python-based interactive packet manipulation program &amp; library</a> <a class="permalink" href="/links/2016/10/scapy-the-python-based-interactive-packet-manipulation-program-library/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2016/10/scapy-the-python-based-interactive-packet-manipulation-program-library/"><time datetime="2016-10-04T09:23:00-0500">October 4, 2016</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/pcap/">pcap</a>, <a href="/tags/python/">python</a>, <a href="/tags/tcp/">tcp</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="http://edwardkeeble.com/2014/02/passive-wifi-tracking/">Passive WiFi Tracking | Edward Keeble</a> <a class="permalink" href="/links/2016/10/passive-wifi-tracking-edward-keeble/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2016/10/passive-wifi-tracking-edward-keeble/"><time datetime="2016-10-04T09:22:00-0500">October 4, 2016</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/tcp/">tcp</a>, <a href="/tags/tracking/">tracking</a>, <a href="/tags/wifi/">wifi</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://danielmiessler.com/study/tcpdump/">A tcpdump Tutorial and Primer with Examples</a> <a class="permalink" href="/links/2016/10/a-tcpdump-tutorial-and-primer-with-examples/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2016/10/a-tcpdump-tutorial-and-primer-with-examples/"><time datetime="2016-10-04T09:22:00-0500">October 4, 2016</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/tcp/">tcp</a>, <a href="/tags/tcpdump/">tcpdump</a>, <a href="/tags/wifi/">wifi</a></p>
+
+</article>
+
+<article class="entry entry-link">
+  <h2><a href="https://www.trustwave.com/Resources/SpiderLabs-Blog/PCAP-Files-Are-Great-Arn-t-They--/">PCAP Files Are Great Aren&#39;t They??</a> <a class="permalink" href="/links/2016/10/pcap-files-are-great-arent-they/">∞</a></h2>
+  
+  <p class="meta">
+  <a class="permalink" href="/links/2016/10/pcap-files-are-great-arent-they/"><time datetime="2016-10-04T09:21:00-0500">October 4, 2016</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/pcap/">pcap</a>, <a href="/tags/tcp/">tcp</a>, <a href="/tags/wifi/">wifi</a></p>
+
+</article>
+
+<nav class="pagination">
+  <span>Page 1 of 3</span>
+<a href="/tags/networking/page/2/">Older →</a></nav>
+  </main>
+  <footer class="site-footer">
+    <p>Matt</p>
+  </footer>
+</body>
+</html>

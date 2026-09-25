@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to copy an app&#39;s sqlite database from device android · Something Later</title>
+<meta name="description" content="adb -d shell “run-as com.ministrybrands.shelbynext ls /data/data/com.ministrybrands.shelbynext/files” adb -d shell “run-as com.ministrybrands.shelbynext cp /data/data/com.ministrybrands.shelbynext/fi…">
+<link rel="canonical" href="https://somethinglater.com/links/2015/05/how-to-copy-an-apps-sqlite-database-from-device-android/">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-title"><a href="/">Something Later</a></p>
+    <p class="site-subtitle">I should be extremely happy in your company.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/archive/">Archive</a>
+      <a href="/books/">Books</a>
+      <a href="/tags/">Tags</a>
+      <a href="/feed.xml">Feed</a>
+    </nav>
+  </header>
+  <main>
+<article class="entry entry-link">
+  <h1><a href="http://stackoverflow.com/questions/19194576/how-to-view-the-sqlite-database-in-device-android">How to copy an app&#39;s sqlite database from device android</a> <a class="permalink" href="/links/2015/05/how-to-copy-an-apps-sqlite-database-from-device-android/">∞</a></h1>
+  <ol>
+<li>adb -d shell “run-as com.ministrybrands.shelbynext ls /data/data/com.ministrybrands.shelbynext/files”</li>
+<li>adb -d shell “run-as com.ministrybrands.shelbynext cp /data/data/com.ministrybrands.shelbynext/files/default.realm /storage/emulated/legacy/Download/shelbynext.realm”</li>
+<li>adb pull /storage/emulated/legacy/Download/shelbynext.realm ~/Desktop</li>
+</ol>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2015/05/how-to-copy-an-apps-sqlite-database-from-device-android/"><time datetime="2015-05-29T16:52:00-0500">May 29, 2015</time></a> · <a href="/tags/android/">android</a>, <a href="/tags/database/">database</a>, <a href="/tags/realm/">realm</a></p>
+
+</article>
+
+<nav class="neighbors">
+<a href="/links/2015/05/android-common-intents/">← Android Common Intents</a>  <a class="next" href="/links/2015/06/nsdictionary-helper-category/">NSDictionary Helper Category →</a></nav>
+  </main>
+  <footer class="site-footer">
+    <p>Matt</p>
+  </footer>
+</body>
+</html>

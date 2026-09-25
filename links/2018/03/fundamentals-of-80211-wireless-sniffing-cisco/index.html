@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fundamentals of 802.11 Wireless Sniffing - Cisco · Something Later</title>
+<meta name="description" content="Put wifi device into monitor mode:\nsudo ifconfig wlan1 down \nsudo iwconfig wlan1 mode monitor\nsudo ifconfig wlan1 up\n\n2. Capture beacon broadcasts\nsudo tshark -i wlan1 -f “type mgt subtype beac…">
+<link rel="canonical" href="https://somethinglater.com/links/2018/03/fundamentals-of-80211-wireless-sniffing-cisco/">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-title"><a href="/">Something Later</a></p>
+    <p class="site-subtitle">I should be extremely happy in your company.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/archive/">Archive</a>
+      <a href="/books/">Books</a>
+      <a href="/tags/">Tags</a>
+      <a href="/feed.xml">Feed</a>
+    </nav>
+  </header>
+  <main>
+<article class="entry entry-link">
+  <h1><a href="https://www.cisco.com/c/en/us/support/docs/wireless-mobility/80211/200527-Fundamentals-of-802-11-Wireless-Sniffing.html">Fundamentals of 802.11 Wireless Sniffing - Cisco</a> <a class="permalink" href="/links/2018/03/fundamentals-of-80211-wireless-sniffing-cisco/">∞</a></h1>
+  <ol>
+<li>Put wifi device into monitor mode:\nsudo ifconfig wlan1 down \nsudo iwconfig wlan1 mode monitor\nsudo ifconfig wlan1 up\n\n2. Capture beacon broadcasts\nsudo tshark -i wlan1 -f “type mgt subtype beacon”\n\n3. Capture AP probe requests and responses\nsudo tshark -i wlan1 -s 256 -f “type mgt subtype probe-resp or subtype probe-req”\n\nOR\n\nsudo tcpdump -i wlan1 -e -s 256 type mgt subtype probe-resp or subtype probe-req\n\nAlso useful:\nsudo airodump-ng wlan1</li>
+</ol>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2018/03/fundamentals-of-80211-wireless-sniffing-cisco/"><time datetime="2018-03-07T18:58:00-0600">March 7, 2018</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/wifi/">wifi</a></p>
+
+</article>
+
+<nav class="neighbors">
+<a href="/links/2018/03/mobile-fonts-in-use/">← Mobile - Fonts In Use</a>  <a class="next" href="/links/2018/03/airodump-ng-aircrack-ng/">airodump-ng [Aircrack-ng] →</a></nav>
+  </main>
+  <footer class="site-footer">
+    <p>Matt</p>
+  </footer>
+</body>
+</html>

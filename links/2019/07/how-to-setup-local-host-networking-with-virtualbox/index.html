@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Setup Local Host Networking with VirtualBox · Something Later</title>
+<meta name="description" content="Setup the virtualbox to use 2 adapters: The first adapter is set to NAT (that will give you the internet connection). The second adapter is set to host only. Start the virtual machine and assign a st…">
+<link rel="canonical" href="https://somethinglater.com/links/2019/07/how-to-setup-local-host-networking-with-virtualbox/">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-title"><a href="/">Something Later</a></p>
+    <p class="site-subtitle">I should be extremely happy in your company.</p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/archive/">Archive</a>
+      <a href="/books/">Books</a>
+      <a href="/tags/">Tags</a>
+      <a href="/feed.xml">Feed</a>
+    </nav>
+  </header>
+  <main>
+<article class="entry entry-link">
+  <h1><a href="https://serverfault.com/a/333584">How to Setup Local Host Networking with VirtualBox</a> <a class="permalink" href="/links/2019/07/how-to-setup-local-host-networking-with-virtualbox/">∞</a></h1>
+  <ol>
+<li>
+<p>Setup the virtualbox to use 2 adapters:</p>
+<ul>
+<li>The first adapter is set to NAT (that will give you the internet connection).</li>
+<li>The second adapter is set to host only.</li>
+</ul>
+</li>
+<li>
+<p>Start the virtual machine and assign a static IP for the second adapter in Ubuntu (for instance 192.168.56.56). The host Windows will have 192.168.56.1 as IP for the internal network (VirtualBox Host-Only Network is the name in network connections in Windows). What this will give you is being able to access the apache server on ubuntu, from windows, by going to 192.168.56.56. Also, Ubuntu will have internet access, since the first adapter (set to NAT) will take care of that.</p>
+</li>
+<li>
+<p>Now, to make the connection available both ways (accessing the windows host from the ubuntu guest) there’s still one more step to be performed. Windows will automatically add the virtualbox host-only network to the list of public networks and that cannot be changed. This entails that the firewall will prevent proper access.</p>
+</li>
+<li>
+<p>To overcome this and not make any security breaches in your setup:</p>
+<ul>
+<li>go to the windows firewall section, in control panel,</li>
+<li>click on advanced settings. In the page that pops up,</li>
+<li>click on inbound rules (left column), then on new rule (right column). Chose custom rule, set the rule to allow all programs, and any protocol. For the scope, add in the first box (local IP addresses) 192.168.56.1, and in the second box (remote IP) 192.168.56.56. Click next, select allow the connection, next, check all profiles, next, give it a name and save.</li>
+</ul>
+</li>
+</ol>
+
+  <p class="meta">
+  <a class="permalink" href="/links/2019/07/how-to-setup-local-host-networking-with-virtualbox/"><time datetime="2019-07-18T19:00:00-0500">July 18, 2019</time></a> · <a href="/tags/networking/">networking</a>, <a href="/tags/windows/">windows</a></p>
+
+</article>
+
+<nav class="neighbors">
+<a href="/links/2019/07/frontend-design-react-and-a-bridge-over-the-great-divide/">← Frontend Design, React, and a Bridge over the Great Divide</a>  <a class="next" href="/links/2019/07/win10-initial-setup-script/">Win10-Initial-Setup-Script →</a></nav>
+  </main>
+  <footer class="site-footer">
+    <p>Matt</p>
+  </footer>
+</body>
+</html>

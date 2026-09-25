@@ -76,4 +76,166 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <content type="html">&lt;p&gt;As long as we’re going to have to live with this genie, I’m still convinced for all sorts of reasons that this is the way things should go. Unfortunately we’re not quite there yet outside of “simple” use cases like summarizing content.&lt;/p&gt;
 </content>
   </entry>
+  <entry>
+    <title>Laws of UX</title>
+    <link href="https://somethinglater.com/books/laws-of-ux/"/>
+    <id>https://somethinglater.com/books/laws-of-ux/</id>
+    <published>2026-04-29T14:12:00-0500</published>
+    <updated>2026-04-29T14:14:21-0500</updated>
+    <content type="html">&lt;p&gt;A designer’s guide to using psychology to design better digital products and services.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Growing Object-Oriented Software, Guided by Tests</title>
+    <link href="https://somethinglater.com/books/growing-object-oriented-software-guided-by-tests/"/>
+    <id>https://somethinglater.com/books/growing-object-oriented-software-guided-by-tests/</id>
+    <published>2026-04-29T06:15:00-0500</published>
+    <updated>2026-04-29T14:16:15-0500</updated>
+    <content type="html"></content>
+  </entry>
+  <entry>
+    <title>AI code and software craft</title>
+    <link href="https://alexwennerberg.com/blog/2026-01-25-slop.html"/>
+    <id>https://somethinglater.com/links/2026/01/ai-code-and-software-craft/</id>
+    <published>2026-01-27T05:13:00-0600</published>
+    <updated>2026-01-27T05:13:49-0600</updated>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;It is true that most code simply is not very good, especially at large companies. And we can continue to do not very good software much more quickly and effectively with AI. But AI cannot solve the main systemic problem in the software industry, which is that, in my view, we still haven’t quite figured out how to build software well at scale. But to do this requires a sense of craft and real human critical thought.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Velox</title>
+    <link href="https://github.com/velox-apps/velox"/>
+    <id>https://somethinglater.com/links/2026/01/velox/</id>
+    <published>2026-01-27T04:57:00-0600</published>
+    <updated>2026-01-27T05:12:55-0600</updated>
+    <content type="html">&lt;p&gt;A port of Tauri to Swift by Miguel de Icaza:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;most of the heavy lifting we get directly from the dependencies I brought unmodified from Tauri&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;It’s to Swift what Tauri is to Rust. Wails is to Go. etc.&lt;/p&gt;
+&lt;p&gt;Only targets macOS and iOS but is &lt;a href=&quot;https://github.com/velox-apps/velox/issues/1&quot;&gt;open to targeting other platforms&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Heart Sings Unbidden</title>
+    <link href="https://somethinglater.com/quotes/3035/"/>
+    <id>https://somethinglater.com/quotes/3035/</id>
+    <published>2026-01-18T08:55:00-0600</published>
+    <updated>2026-01-18T08:59:05-0600</updated>
+    <content type="html">&lt;p&gt;I believe that many who find that “nothing happens” when they sit down, or kneel down, to a book of devotion, would find that the heart sings unbidden while they are working their way through a tough bit of theology with a pipe in their teeth and a pencil in their hand.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Anthropic Sandbox Runtime (srt)</title>
+    <link href="https://github.com/anthropic-experimental/sandbox-runtime"/>
+    <id>https://somethinglater.com/links/2026/01/anthropic-sandbox-runtime-srt/</id>
+    <published>2026-01-13T06:02:00-0600</published>
+    <updated>2026-01-13T06:03:30-0600</updated>
+    <content type="html">&lt;p&gt;Interesting (but experimental) sandboxing tool from Anthropic for enforcing filesystem and network restrictions on arbitrary processes at the OS level, without requiring a container.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Mole</title>
+    <link href="https://github.com/tw93/Mole"/>
+    <id>https://somethinglater.com/links/2026/01/mole/</id>
+    <published>2026-01-06T07:18:00-0600</published>
+    <updated>2026-01-06T07:21:13-0600</updated>
+    <content type="html">&lt;p&gt;An almost-too-good-to-be-true kind of tool:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Deep cleaning: Scans+removes caches, logs, and browser leftovers&lt;/li&gt;
+&lt;li&gt;Smart uninstaller: removes apps along with launch agents, preferences, and hidden remnants&lt;/li&gt;
+&lt;li&gt;Disk insights: DaisyDisk but for the terminal&lt;/li&gt;
+&lt;li&gt;Live monitoring: iStat Menus but for the terminal&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>The Myth of Technological Inevitability</title>
+    <link href="https://somethinglater.com/quotes/3032/"/>
+    <id>https://somethinglater.com/quotes/3032/</id>
+    <published>2025-12-20T10:00:00-0600</published>
+    <updated>2025-12-20T10:04:14-0600</updated>
+    <content type="html">&lt;p&gt;The myth of technological and political and social inevitability is a powerful tranquilizer of the conscience. Its service is to remove responsibility from the shoulders of everyone who truly believes in it. But in fact there are actors.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Modern Illustration</title>
+    <link href="https://www.modernillustration.org"/>
+    <id>https://somethinglater.com/links/2025/12/modern-illustration/</id>
+    <published>2025-12-19T15:57:00-0600</published>
+    <updated>2025-12-19T15:59:04-0600</updated>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/media/7f5ecf8818dc/sanka.jpg&quot; alt=&quot;&quot; width=&quot;1200&quot; height=&quot;1200&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;An archive of illustration from c.1950-1975, shining a spotlight on pioneering illustrators and their work.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Simon Willison ported JustHTML from Python to JavaScript with [AI] in 4.5 hours</title>
+    <link href="https://simonwillison.net/2025/Dec/15/porting-justhtml/"/>
+    <id>https://somethinglater.com/links/2025/12/simon-willison-ported-justhtml-from-python-to-javascript-with-ai-in-45-hours/</id>
+    <published>2025-12-18T19:00:00-0600</published>
+    <updated>2025-12-18T19:00:00-0600</updated>
+    <content type="html">&lt;p&gt;Simon ported a Python HTML5 parsing library to JavaScript with Codex CLI and GPT-5.2. Lots of interesting details but the most interesting part to me is the questions he had at the end:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Does this library represent a legal violation of copyright of either the Rust library or the Python one?&lt;/li&gt;
+&lt;li&gt;Even if this is legal, is it ethical to build a library in this way?&lt;/li&gt;
+&lt;li&gt;Does this format of development hurt the open source ecosystem?&lt;/li&gt;
+&lt;li&gt;Can I even assert copyright over this, given how much of the work was produced by the LLM?&lt;/li&gt;
+&lt;li&gt;Is it responsible to publish software libraries built in this way?&lt;/li&gt;
+&lt;li&gt;How much better would this library be if an expert team hand crafted it over the course of several months?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>American Nations: A History of the Eleven Rival Regional Cultures of North America</title>
+    <link href="https://somethinglater.com/books/american-nations-a-history-of-the-eleven-rival-regional-cultures-of-north/"/>
+    <id>https://somethinglater.com/books/american-nations-a-history-of-the-eleven-rival-regional-cultures-of-north/</id>
+    <published>2025-11-28T12:00:00-0600</published>
+    <updated>2025-12-13T15:09:53-0600</updated>
+    <content type="html">&lt;p&gt;Something that Jana came across that I immediately added to my to-read pile.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;According to award-winning journalist and historian Colin Woodard, North America is made up of eleven distinct nations, each with its own unique historical roots. In American Nations he takes readers on a journey through the history of our fractured continent, offering a revolutionary and revelatory take on American identity, and how the conflicts between them have shaped our past and continue to mold our future.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Old-School Coder Writing a Regex</title>
+    <link href="https://somethinglater.com/quotes/3028/"/>
+    <id>https://somethinglater.com/quotes/3028/</id>
+    <published>2025-11-26T10:04:00-0600</published>
+    <updated>2025-12-13T16:00:03-0600</updated>
+    <content type="html">&lt;p&gt;When businesses start to realize that they’re paying vast amounts to get LLMs to do tasks that could be accomplished by a old-school coder writing a regex script … “I do think we’re about to see a lot of companies realize that a thinking model connected to an MCP server is way more expensive than just paying someone to write a bash script. Starting now, you’ll be able to make a career out of un-LLM-ifying applications.”&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Reading Genesis Well</title>
+    <link href="https://somethinglater.com/books/reading-genesis-well/"/>
+    <id>https://somethinglater.com/books/reading-genesis-well/</id>
+    <published>2025-11-11T15:02:00-0600</published>
+    <updated>2025-12-13T15:10:34-0600</updated>
+    <content type="html"></content>
+  </entry>
+  <entry>
+    <title>Hybrid Frontend Architecture with Astro and Starlight</title>
+    <link href="https://frontendatscale.com/blog/hybrid-frontend-architecture/"/>
+    <id>https://somethinglater.com/links/2025/11/hybrid-frontend-architecture-with-astro-and-starlight/</id>
+    <published>2025-11-04T12:53:00-0600</published>
+    <updated>2025-11-26T09:57:01-0600</updated>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Building a fully-feature docs site with Astro and Starlight, including authentication and CMS support.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Landscaping with Native Plants</title>
+    <link href="https://www.tnipc.org/landscaping/"/>
+    <id>https://somethinglater.com/links/2025/10/landscaping-with-native-plants/</id>
+    <published>2025-10-12T11:07:00-0500</published>
+    <updated>2025-11-22T15:35:16-0600</updated>
+    <content type="html">&lt;p&gt;To promote the use of native plants in gardens and landscapes, TN-IPC developed a set of three brochures in the 1990s, each designed specifically for East, Middle, and West Tennessee.&lt;/p&gt;
+</content>
+  </entry>
 </feed>
