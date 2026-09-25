@@ -5,14 +5,23 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-09-25T09:46:38-0500</updated>
+  <updated>2026-09-25T09:46:59-0500</updated>
   <author><name>Matt</name></author>
     <entry>
+    <title>Yada yada yada</title>
+    <link href="https://somethinglater.com/2026/09/yada-yada-yada/"/>
+    <id>https://somethinglater.com/2026/09/yada-yada-yada/</id>
+    <published>2026-09-25T09:28:27-0500</published>
+    <updated>2026-09-25T09:32:26-0500</updated>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.&lt;/strong&gt; At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. &lt;em&gt;Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/em&gt; Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>25th Anniversary Baseball Road Trip</title>
-    <link href="https://somethinglater.com/2026/09/25th-anniversary-baseball-road-trip/"/>
-    <id>https://somethinglater.com/2026/09/25th-anniversary-baseball-road-trip/</id>
-    <published>2026-09-25T09:46:26-0500</published>
-    <updated>2026-09-25T09:46:38-0500</updated>
+    <link href="https://somethinglater.com/2026/06/25th-anniversary-baseball-road-trip/"/>
+    <id>https://somethinglater.com/2026/06/25th-anniversary-baseball-road-trip/</id>
+    <published>2026-06-07T19:00:26-0500</published>
+    <updated>2026-09-25T09:46:59-0500</updated>
     <content type="html">&lt;p&gt;&lt;strong&gt;Saturday, 5/31 - St. Louis vs Cubs&lt;/strong&gt;
 Drove to St Louis, stopped a saw giant cup. Rolled into town and went to the Soulard neighborhood for lunch (tacos) and wandered for a bit. Had coffee at &lt;a href=&quot;https://www.protagonistcafe.com&quot;&gt;Protagonist Coffee&lt;/a&gt; and then headed for the Arch. Parking was a pain the butt (recurring theme for the trip). We walked by the river and around the arch, eventually going down under it to buy a couple of stickers from the gift shop. Weather was overcast and light drizzle but it was supposed to clear up by game time.&lt;/p&gt;
 &lt;p&gt;Checked into the hotel (Westin); parking was a pain again. Walked over to the game. While waiting to go in the rain became a more steady drizzle and by the time we were inside it was full-on raining. We walked around, watching it rain. Got burgers and fries and sat on the ground under an overhang. It was muggy and sweaty. As game time got closer, the rain had stopped and we dried off our seats with napkins. The game ended up being closer to a Cubs home game there were so many Cubs fans there. The Cubs won and we went back to the hotel.&lt;/p&gt;
@@ -34,15 +43,6 @@ No baseball today so we had all day to do whatever we wanted. Started out by get
 &lt;p&gt;After the river cruise we grabbed lunch from Giordano’s (classic deep dish pizza), took the leftovers back to the hotel and then headed for the Art Institute of Chicago - which is incredible but also overwhelming. So many great works of art. From there we took a (long) walk over to Navy Pier, where Jana got attacked by a bird. After recovering from that and seeing the Bob Newhart statue, we walked back up the river walk and then back to the hotel (after grabbing some drinks from 7-11) to eat our leftover pizza and get some much needed rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Thursday, 6/5 - Home&lt;/strong&gt;
 The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for gas), Mount Vernon, IL (for coffee at Panera) and Dyersburg, TN (for waffle fries from CFA).&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Yada yada yada</title>
-    <link href="https://somethinglater.com/2026/09/yada-yada-yada/"/>
-    <id>https://somethinglater.com/2026/09/yada-yada-yada/</id>
-    <published>2026-09-25T09:28:27-0500</published>
-    <updated>2026-09-25T09:32:26-0500</updated>
-    <content type="html">&lt;p&gt;&lt;strong&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.&lt;/strong&gt; At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. &lt;em&gt;Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/em&gt; Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
 </content>
   </entry>
 </feed>
