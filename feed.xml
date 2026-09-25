@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Something Later</title>
+  <subtitle>I should be extremely happy in your company.</subtitle>
+  <link href="https://somethinglater.com/"/>
+  <link rel="self" href="https://somethinglater.com/feed.xml"/>
+  <id>https://somethinglater.com/</id>
+  <updated>2026-09-25T09:32:26-0500</updated>
+  <author><name>Matt</name></author>
+    <entry>
+    <title>Yada yada yada</title>
+    <link href="https://somethinglater.com/2026/09/yada-yada-yada/"/>
+    <id>https://somethinglater.com/2026/09/yada-yada-yada/</id>
+    <published>2026-09-25T09:28:27-0500</published>
+    <updated>2026-09-25T09:32:26-0500</updated>
+    <content type="html">&lt;p&gt;&lt;strong&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.&lt;/strong&gt; At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. &lt;em&gt;Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/em&gt; Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
