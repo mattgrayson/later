@@ -202,8 +202,9 @@ section {
 .pagination {
     display: flex;
     justify-content: space-between;
-    grid-column: 2;
-    grid-template-columns: subgrid;
+    /* Under the entries, in their column: on small screens that's the only column. */
+    grid-column: 1;
+    padding: 0 1rem;
 }
 
 article {
