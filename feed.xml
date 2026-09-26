@@ -5,14 +5,14 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-09-25T10:22:49-0500</updated>
+  <updated>2026-09-26T15:43:55-0500</updated>
   <author><name>Matt</name></author>
     <entry>
-    <title>Unix</title>
+    <title>Unix System Philosophy</title>
     <link href="https://somethinglater.com/2026/09/unix/"/>
     <id>https://somethinglater.com/2026/09/unix/</id>
     <published>2026-09-26T05:54:22-0500</published>
-    <updated>2026-09-21T06:20:40-0500</updated>
+    <updated>2026-09-26T15:43:55-0500</updated>
     <content type="html">&lt;p&gt;&lt;img src=&quot;/media/bf1f685b4e59/bf73227d-5b56-49f5-8189-ea73007a3197.jpg&quot; width=&quot;1802&quot; height=&quot;1222&quot; loading=&quot;lazy&quot; alt=&quot;unix&quot; /&gt;&lt;/p&gt;
 </content>
   </entry>
