@@ -1,193 +1,387 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <title>Something Later · Page 93</title>
-  <meta name="description" content="I should be extremely happy in your company.">    <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="I should be extremely happy in your company.">  
+  <!-- https://web.dev/articles/add-manifest#theme-color -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333333">
+
+  <link rel="icon" href="/media/277448b1cad9/favicon.png" type="image/png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/media/35b3f2cd4975/icon.png">
   <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+
+  <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/responsive.css">
 </head>
 <body>
-  <header class="site-header">
-    <p class="site-title"><a href="/">Something Later</a></p>
-    <p class="site-subtitle">I should be extremely happy in your company.</p>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/archive/">Archive</a>
-      <a href="/books/">Books</a>
-      <a href="/tags/">Tags</a>
-      <a href="/feed.xml">Feed</a>
-    </nav>
+  <header>
+    <h1>
+      <a href="/" title="Home">
+        Something Later
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v4.19l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V10.5Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </h1>
+
   </header>
+
   <main>
-<article class="entry entry-link">
-  <h2><a href="http://www.bluem.net/downloads/pdftotext_en/">pdftotext</a> <a class="permalink" href="/links/2008/06/pdftotext/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/06/pdftotext/"><time datetime="2008-06-16T14:37:00-0500">June 16, 2008</time></a> · <a href="/tags/apple/">apple</a>, <a href="/tags/linux/">linux</a>, <a href="/tags/macosx/">macosx</a>, <a href="/tags/pdf/">pdf</a>, <a href="/tags/tools/">tools</a>, <a href="/tags/unix/">unix</a></p>
+    <section>
+      <nav>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="/links/" title="Links">Links</a></li>
+          <li><a href="/books/" title="Books">Books</a></li>
+          <li><a href="/notes/" title="Notes">Notes</a></li>
+          <li><a href="/quotes/" title="Quotes">Quotes</a></li>
+        </ul>
+      </nav>
 
+      <search>
+        <form action="/search/">
+          <label for="search">Search</label>
+          <input type="search" id="search" name="q">
+        </form>
+      </search>
+    </section>
+
+<article id="thing-2123" class="thing--link">
+  <aside>
+    <a href="/links/2014/01/sql-server-most-costly-queries-by-cpu/" title="Permanent link for this link">
+      2014.01.17 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title">
+        <a href="http://stackoverflow.com/a/945290" target="_blank" rel="noreferrer" class="perma" title="SQL Server - most costly queries by CPU">
+          SQL Server - most costly queries by CPU
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Handy SQL snippet to help identify slow queries:</p>
+<hr />
+<p>SELECT TOP 20</p>
+<pre><code>qs.sql_handle,
+
+qs.execution_count,
+
+qs.total_worker_time AS Total_CPU,
+
+total_CPU_inSeconds = --Converted from microseconds
+
+    qs.total_worker_time/1000000,
+
+average_CPU_inSeconds = --Converted from microseconds
+
+    (qs.total_worker_time/1000000) / qs.execution_count,
+
+qs.total_elapsed_time,
+
+total_elapsed_time_inSeconds = --Converted from microseconds
+
+    qs.total_elapsed_time/1000000,
+</code></pre>
+<p>st.text,</p>
+<p>qp.query_plan</p>
+<p>from</p>
+<pre><code>sys.dm_exec_query_stats as qs
+
+CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) as st
+
+cross apply sys.dm_exec_query_plan (qs.plan_handle) as qp
+</code></pre>
+<p>ORDER BY qs.total_worker_time desc</p>
+<hr />
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://fi.am/entry/shortcutting-render_to_response/">Shortcutting render_to_response</a> <a class="permalink" href="/links/2008/06/shortcutting-render-to-response/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/06/shortcutting-render-to-response/"><time datetime="2008-06-13T17:46:00-0500">June 13, 2008</time></a> · <a href="/tags/django/">django</a>, <a href="/tags/howto/">howto</a>, <a href="/tags/python/">python</a>, <a href="/tags/tips/">tips</a></p>
+<article id="thing-2122" class="thing--link">
+  <aside>
+    <a href="/links/2014/01/quartznet/" title="Permanent link for this link">
+      2014.01.14 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://www.quartz-scheduler.net/" target="_blank" rel="noreferrer" class="perma" title="Quartz.NET">
+          Quartz.NET
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Quartz.NET is a full-featured, open source job scheduling system that can be used from smallest apps to large scale enterprise systems.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://www.pdfbox.org/">PDFBox - Java PDF Library</a> <a class="permalink" href="/links/2008/06/pdfbox-java-pdf-library/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/06/pdfbox-java-pdf-library/"><time datetime="2008-06-13T16:14:00-0500">June 13, 2008</time></a> · <a href="/tags/api/">api</a>, <a href="/tags/java/">java</a>, <a href="/tags/library/">library</a>, <a href="/tags/pdf/">pdf</a></p>
+<article id="thing-2121" class="thing--link">
+  <aside>
+    <a href="/links/2014/01/sp-who2/" title="Permanent link for this link">
+      2014.01.08 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://www.sqlmatters.com/Articles/sp_who2%20-%20filtering%20and%20sorting%20the%20results.aspx" target="_blank" rel="noreferrer" class="perma" title="sp_who2">
+          sp_who2
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Handy, undocumented stored procedure to quickly see current SQL Server connections and/or queries along with CPU time and duration.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://schmidt.devlib.org/java/libraries-pdf.html">Java libraries to read and write PDF files</a> <a class="permalink" href="/links/2008/06/java-libraries-to-read-and-write-pdf-files/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/06/java-libraries-to-read-and-write-pdf-files/"><time datetime="2008-06-13T16:14:00-0500">June 13, 2008</time></a> · <a href="/tags/api/">api</a>, <a href="/tags/java/">java</a>, <a href="/tags/library/">library</a>, <a href="/tags/pdf/">pdf</a></p>
+<article id="thing-2120" class="thing--link">
+  <aside>
+    <a href="/links/2014/01/the-monuments-men/" title="Permanent link for this link">
+      2014.01.05 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://trailers.apple.com/trailers/sony_pictures/themonumentsmen/" target="_blank" rel="noreferrer" class="perma" title="The Monuments Men">
+          The Monuments Men
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Based on the true story of the greatest treasure hunt in history, The Monuments Men is an action-thriller focusing on an unlikely World War II platoon, tasked by FDR with going into Germany to rescue artistic masterpieces from Nazi thieves and returning them to their rightful owners.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://tlsreport.layer8.net/">the tls report</a> <a class="permalink" href="/links/2008/06/the-tls-report/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/06/the-tls-report/"><time datetime="2008-06-12T09:39:00-0500">June 12, 2008</time></a> · <a href="/tags/security/">security</a>, <a href="/tags/server/">server</a>, <a href="/tags/ssl/">ssl</a>, <a href="/tags/tls/">tls</a>, <a href="/tags/tools/">tools</a></p>
+<article id="thing-2119" class="thing--link">
+  <aside>
+    <a href="/links/2014/01/new-old-stock/" title="Permanent link for this link">
+      2014.01.05 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://nos.twnsnd.co/" target="_blank" rel="noreferrer" class="perma" title="New Old Stock">
+          New Old Stock
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://www.softiesonrails.com/2008/6/5/the-absolute-moron-s-guide-to-capistrano-git-and-thin-edition">Softies on Rails: The Absolute Moron&#39;s Guide to Capistrano, Git and Thin Edition</a> <a class="permalink" href="/links/2008/06/softies-on-rails-the-absolute-morons-guide-to-capistrano-git-and-thin-edition/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/06/softies-on-rails-the-absolute-morons-guide-to-capistrano-git-and-thin-edition/"><time datetime="2008-06-08T09:40:00-0500">June 8, 2008</time></a> · <a href="/tags/capistrano/">capistrano</a>, <a href="/tags/deployment/">deployment</a>, <a href="/tags/git/">git</a>, <a href="/tags/howto/">howto</a>, <a href="/tags/rails/">rails</a>, <a href="/tags/ruby/">ruby</a>, <a href="/tags/tips/">tips</a>, <a href="/tags/tutorials/">tutorials</a></p>
+<article id="thing-2118" class="thing--link">
+  <aside>
+    <a href="/links/2014/01/fifty-foot-shadows/" title="Permanent link for this link">
+      2014.01.04 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://fiftyfootshadows.net/category/desktops/" target="_blank" rel="noreferrer" class="perma" title="Fifty Foot Shadows">
+          Fifty Foot Shadows
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://www.macworld.com/article/132693/2008/03/changeshortusername.html">Macworld | Changing the short username in Leopard</a> <a class="permalink" href="/links/2008/06/macworld-changing-the-short-username-in-leopard/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/06/macworld-changing-the-short-username-in-leopard/"><time datetime="2008-06-05T13:35:00-0500">June 5, 2008</time></a> · <a href="/tags/apple/">apple</a>, <a href="/tags/howto/">howto</a>, <a href="/tags/leopard/">leopard</a>, <a href="/tags/macosx/">macosx</a>, <a href="/tags/tips/">tips</a></p>
+<article id="thing-2117" class="thing--link">
+  <aside>
+    <a href="/links/2014/01/papa-parse/" title="Permanent link for this link">
+      2014.01.04 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://papaparse.com/" target="_blank" rel="noreferrer" class="perma" title="Papa Parse">
+          Papa Parse
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Papa is a powerful jQuery plugin that parses CSV (delimited text) input and can handle large files by streaming them.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://code.google.com/p/django-oembed/">django-oembed - Google Code</a> <a class="permalink" href="/links/2008/06/django-oembed-google-code/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/06/django-oembed-google-code/"><time datetime="2008-06-05T13:35:00-0500">June 5, 2008</time></a> · <a href="/tags/django/">django</a>, <a href="/tags/plugins/">plugins</a>, <a href="/tags/python/">python</a></p>
+<article id="thing-2116" class="thing--link">
+  <aside>
+    <a href="/links/2014/01/secure-session-management-tips/" title="Permanent link for this link">
+      2014.01.01 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://wblinks.com/notes/secure-session-management-tips" target="_blank" rel="noreferrer" class="perma" title="Secure Session Management Tips">
+          Secure Session Management Tips
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://www.barbariangroup.com/software/plainview_app_1_0">plainview : software : the barbarian group</a> <a class="permalink" href="/links/2008/06/plainview-software-the-barbarian-group/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/06/plainview-software-the-barbarian-group/"><time datetime="2008-06-05T12:15:00-0500">June 5, 2008</time></a> · <a href="/tags/apple/">apple</a>, <a href="/tags/browsers/">browsers</a>, <a href="/tags/macosx/">macosx</a>, <a href="/tags/software/">software</a>, <a href="/tags/web/">web</a>, <a href="/tags/webkit/">webkit</a></p>
+<article id="thing-2115" class="thing--link">
+  <aside>
+    <a href="/links/2013/12/a-soft-murmur/" title="Permanent link for this link">
+      2013.12.29 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://asoftmurmur.com/" target="_blank" rel="noreferrer" class="perma" title="A Soft Murmur">
+          A Soft Murmur
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Ambient sounds to wash away distraction.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://jqueryfordesigners.com/coda-slider-effect/">Coda Slider Effect | jQuery for Designers - Tutorials and screencasts</a> <a class="permalink" href="/links/2008/06/coda-slider-effect-jquery-for-designers-tutorials-and-screencasts/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/06/coda-slider-effect-jquery-for-designers-tutorials-and-screencasts/"><time datetime="2008-06-03T15:34:00-0500">June 3, 2008</time></a> · <a href="/tags/ajax/">ajax</a>, <a href="/tags/howto/">howto</a>, <a href="/tags/inspiration/">inspiration</a>, <a href="/tags/javascript/">javascript</a>, <a href="/tags/jquery/">jquery</a>, <a href="/tags/tutorials/">tutorials</a></p>
+<article id="thing-2114" class="thing--link">
+  <aside>
+    <a href="/links/2013/12/the-flow-fallacy/" title="Permanent link for this link">
+      2013.12.01 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://blogs.msdn.com/b/eric_brechner/archive/2013/12/01/the-flow-fallacy.aspx" target="_blank" rel="noreferrer" class="perma" title="The Flow Fallacy">
+          The Flow Fallacy
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://codeforpeople.rubyforge.org/svn/bj/trunk/README">Backgroundjob</a> <a class="permalink" href="/links/2008/05/backgroundjob/">∞</a></h2>
-  <p>Backgroundjob (Bj) is a brain dead simple zero admin background priority queue for Rails.  Bj is robust, platform independent (including windows), and supports internal or external manangement of the background runner process.</p>
-
-  <p class="meta">
-  <a class="permalink" href="/links/2008/05/backgroundjob/"><time datetime="2008-05-31T19:04:00-0500">May 31, 2008</time></a> · <a href="/tags/background/">background</a>, <a href="/tags/bj/">bj</a>, <a href="/tags/plugin/">plugin</a>, <a href="/tags/queue/">queue</a>, <a href="/tags/rails/">rails</a>, <a href="/tags/ruby/">ruby</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://blog.brightbox.co.uk/posts/brightbox-builds-hardy-passenger-package">Brightbox Blog - Ruby on Rails Hosting - Brightbox builds Hardy Passenger package</a> <a class="permalink" href="/links/2008/05/brightbox-blog-ruby-on-rails-hosting-brightbox-builds-hardy-passenger-package/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/05/brightbox-blog-ruby-on-rails-hosting-brightbox-builds-hardy-passenger-package/"><time datetime="2008-05-31T01:11:00-0500">May 31, 2008</time></a> · <a href="/tags/apache/">apache</a>, <a href="/tags/linux/">linux</a>, <a href="/tags/rails/">rails</a>, <a href="/tags/ruby/">ruby</a>, <a href="/tags/ubuntu/">ubuntu</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://blog.evanweaver.com/files/doc/fauna/ultrasphinx/files/DEPLOYMENT_NOTES.html">Ultrasphinx - File: DEPLOYMENT_NOTES</a> <a class="permalink" href="/links/2008/05/ultrasphinx-file-deployment-notes/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/05/ultrasphinx-file-deployment-notes/"><time datetime="2008-05-29T19:20:00-0500">May 29, 2008</time></a> · <a href="/tags/howto/">howto</a>, <a href="/tags/plugins/">plugins</a>, <a href="/tags/rails/">rails</a>, <a href="/tags/search/">search</a>, <a href="/tags/sphinx/">sphinx</a>, <a href="/tags/tips/">tips</a>, <a href="/tags/ultrasphinx/">ultrasphinx</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://www.samsonsociety.org/">Samson Society</a> <a class="permalink" href="/links/2008/05/samson-society/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/05/samson-society/"><time datetime="2008-05-29T19:05:00-0500">May 29, 2008</time></a> · <a href="/tags/christianity/">christianity</a>, <a href="/tags/jesus/">jesus</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://www.gittr.com/index.php/archive/basics-of-source-control/">Gittr » Blog Archive » Basics of Source Control</a> <a class="permalink" href="/links/2008/05/gittr-blog-archive-basics-of-source-control/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/05/gittr-blog-archive-basics-of-source-control/"><time datetime="2008-05-29T19:05:00-0500">May 29, 2008</time></a> · <a href="/tags/git/">git</a>, <a href="/tags/programming/">programming</a>, <a href="/tags/scm/">scm</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://24ways.org/2007/tracking-christmas-cheer-with-google-charts">24 ways: Tracking Christmas Cheer with Google Charts</a> <a class="permalink" href="/links/2008/05/24-ways-tracking-christmas-cheer-with-google-charts/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/05/24-ways-tracking-christmas-cheer-with-google-charts/"><time datetime="2008-05-27T00:14:00-0500">May 27, 2008</time></a> · <a href="/tags/api/">api</a>, <a href="/tags/charts/">charts</a>, <a href="/tags/google/">google</a>, <a href="/tags/howto/">howto</a>, <a href="/tags/tips/">tips</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://simonwillison.net/2008/May/22/debugging/">Debugging Django</a> <a class="permalink" href="/links/2008/05/debugging-django/">∞</a></h2>
-  <p>Reading @simonw’s great tips for debugging Django</p>
-
-  <p class="meta">
-  <a class="permalink" href="/links/2008/05/debugging-django/"><time datetime="2008-05-23T11:36:00-0500">May 23, 2008</time></a> · <a href="/tags/debugging/">debugging</a>, <a href="/tags/development/">development</a>, <a href="/tags/django/">django</a>, <a href="/tags/howto/">howto</a>, <a href="/tags/python/">python</a>, <a href="/tags/tips/">tips</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://hex-dump.blogspot.com/2006/08/deploying-gdata-reader-as-executable.html">IronPython: Deploying the an app as single executable</a> <a class="permalink" href="/links/2008/05/ironpython-deploying-the-an-app-as-single-executable/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/05/ironpython-deploying-the-an-app-as-single-executable/"><time datetime="2008-05-23T09:55:00-0500">May 23, 2008</time></a> · <a href="/tags/howto/">howto</a>, <a href="/tags/ironpython/">ironpython</a>, <a href="/tags/net/">net</a>, <a href="/tags/python/">python</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://pycheesecake.org/wiki/PythonTestingToolsTaxonomy">PythonTestingToolsTaxonomy - Cheesecake - Trac</a> <a class="permalink" href="/links/2008/05/pythontestingtoolstaxonomy-cheesecake-trac/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/05/pythontestingtoolstaxonomy-cheesecake-trac/"><time datetime="2008-05-22T08:53:00-0500">May 22, 2008</time></a> · <a href="/tags/development/">development</a>, <a href="/tags/python/">python</a>, <a href="/tags/tdd/">tdd</a>, <a href="/tags/testing/">testing</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://www.viget.com/extend/effectively-using-git-with-subversion/">Using Git</a> <a class="permalink" href="/links/2008/05/using-git/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/05/using-git/"><time datetime="2008-05-21T13:57:00-0500">May 21, 2008</time></a> · <a href="/tags/git/">git</a>, <a href="/tags/howto/">howto</a>, <a href="/tags/scm/">scm</a>, <a href="/tags/tips/">tips</a>, <a href="/tags/tutorials/">tutorials</a></p>
-
-</article>
-
-<nav class="pagination">
-<a href="/page/92/">← Newer</a>  <span>Page 93 of 152</span>
-<a href="/page/94/">Older →</a></nav>
+<div class="pagination">
+<a href="/page/92/">&larr; Previous</a>  <a href="/page/94/">Next &rarr;</a></div>
   </main>
-  <footer class="site-footer">
-    <p>Matt</p>
+
+  <footer>
+    <img src="/octopus.svg" alt="It's an octopus">
+
+    <span>
+      &copy;
+      2026
+      &middot;
+      <a href="https://pushcartlabs.com/">made by matt grayson</a>
+    </span>
   </footer>
 </body>
 </html>

@@ -1,192 +1,358 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <title>Something Later · Page 26</title>
-  <meta name="description" content="I should be extremely happy in your company.">    <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="I should be extremely happy in your company.">  
+  <!-- https://web.dev/articles/add-manifest#theme-color -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333333">
+
+  <link rel="icon" href="/media/277448b1cad9/favicon.png" type="image/png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/media/35b3f2cd4975/icon.png">
   <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+
+  <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/responsive.css">
 </head>
 <body>
-  <header class="site-header">
-    <p class="site-title"><a href="/">Something Later</a></p>
-    <p class="site-subtitle">I should be extremely happy in your company.</p>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/archive/">Archive</a>
-      <a href="/books/">Books</a>
-      <a href="/tags/">Tags</a>
-      <a href="/feed.xml">Feed</a>
-    </nav>
+  <header>
+    <h1>
+      <a href="/" title="Home">
+        Something Later
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v4.19l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V10.5Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </h1>
+
   </header>
+
   <main>
-<article class="entry entry-link">
-  <h2><a href="https://davedelong.com/blog/2017/11/06/a-better-mvc-part-1-the-problems/">A Better MVC, Part 1: The Problems | Dave DeLong</a> <a class="permalink" href="/links/2018/07/a-better-mvc-part-1-the-problems-dave-delong/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/07/a-better-mvc-part-1-the-problems-dave-delong/"><time datetime="2018-07-03T05:08:00-0500">July 3, 2018</time></a> · <a href="/tags/ios/">ios</a>, <a href="/tags/mvc/">mvc</a>, <a href="/tags/programming/">programming</a></p>
+    <section>
+      <nav>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="/links/" title="Links">Links</a></li>
+          <li><a href="/books/" title="Books">Books</a></li>
+          <li><a href="/notes/" title="Notes">Notes</a></li>
+          <li><a href="/quotes/" title="Quotes">Quotes</a></li>
+        </ul>
+      </nav>
 
+      <search>
+        <form action="/search/">
+          <label for="search">Search</label>
+          <input type="search" id="search" name="q">
+        </form>
+      </search>
+    </section>
+
+<article id="thing-2793" class="thing--quote">
+  <aside>
+    <a href="/quotes/2793/" title="Permanent link for this quote">
+      2020.11.25 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+
+
+    <div class="details">
+            <blockquote><p>Divine simplicity is a difficult doctrine, to be sure. But then would we not expect at the outset difficulties of its kind? Why should God not be different than we expect and other than we can fathom? It would strange indeed if God were not strange.</p>
+</blockquote>
+            <p>
+        &mdash;
+        <cite>Gavin Ortlund, Theological Retrieval for Evangelicals, p. 139</cite>
+      </p>
+    </div>
+
+
+    <a class="kind" title="See all quotes" href="/quotes/">
+      quote
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://www.ordinarytimemusic.com/music/">Music | Ordinary Time</a> <a class="permalink" href="/links/2018/07/music-ordinary-time/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/07/music-ordinary-time/"><time datetime="2018-07-03T05:07:00-0500">July 3, 2018</time></a> · <a href="/tags/guitar/">guitar</a>, <a href="/tags/music/">music</a></p>
+<article id="thing-2792" class="thing--link">
+  <aside>
+    <a href="/links/2020/11/dotnet-outdated/" title="Permanent link for this link">
+      2020.11.24 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://github.com/dotnet-outdated/dotnet-outdated" target="_blank" rel="noreferrer" class="perma" title="dotnet-outdated">
+          dotnet-outdated
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>A .NET Core global tool to display and update outdated NuGet packages in a project</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://github.com/donileo/RMessage">donileo/RMessage: A crisp in-app notification/message banner built in ObjC.</a> <a class="permalink" href="/links/2018/06/donileormessage-a-crisp-in-app-notificationmessage-banner-built-in-objc/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/06/donileormessage-a-crisp-in-app-notificationmessage-banner-built-in-objc/"><time datetime="2018-06-29T06:05:00-0500">June 29, 2018</time></a> · <a href="/tags/ios/">ios</a>, <a href="/tags/notifications/">notifications</a>, <a href="/tags/objectivec/">objectivec</a></p>
+<article id="thing-2791" class="thing--link">
+  <aside>
+    <a href="/links/2020/11/how-to-monitor-flight-traffic-with-a-raspberry-pi/" title="Permanent link for this link">
+      2020.11.24 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://brianchristner.io/monitor-airplane-traffic-with-a-raspberry-pi/" target="_blank" rel="noreferrer" class="perma" title="How to Monitor Flight Traffic with a Raspberry Pi">
+          How to Monitor Flight Traffic with a Raspberry Pi
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>By creating a Raspberry Pi FlightAware ground station, we collect the ADS-B metrics and send the metrics to FlightAware for visualization. The Raspberry Pi runs the FlightAware software, which provides the interfaces to a USB TV tuner responsible for recording the ADS-B signals.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://www.superhealthykids.com/chocolate-banana-smoothie/">Chocolate Banana Smoothie</a> <a class="permalink" href="/links/2018/06/chocolate-banana-smoothie/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/06/chocolate-banana-smoothie/"><time datetime="2018-06-23T19:33:00-0500">June 23, 2018</time></a> · <a href="/tags/recipe/">recipe</a>, <a href="/tags/smoothie/">smoothie</a></p>
+<article id="thing-2790" class="thing--link">
+  <aside>
+    <a href="/links/2020/11/browser-extensions-are-underrated-the-promise-of-hackable-software/" title="Permanent link for this link">
+      2020.11.24 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://www.geoffreylitt.com/2019/07/29/browser-extensions.html" target="_blank" rel="noreferrer" class="perma" title="Browser extensions are underrated: the promise of hackable software">
+          Browser extensions are underrated: the promise of hackable software
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://zachholman.com/talk/utc-is-enough-for-everyone-right">UTC is Enough for Everyone, Right?</a> <a class="permalink" href="/links/2018/06/utc-is-enough-for-everyone-right/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/06/utc-is-enough-for-everyone-right/"><time datetime="2018-06-21T14:01:00-0500">June 21, 2018</time></a> · <a href="/tags/calendar/">calendar</a>, <a href="/tags/dates/">dates</a>, <a href="/tags/programming/">programming</a></p>
+<article id="thing-2789" class="thing--link">
+  <aside>
+    <a href="/links/2020/11/swr-react-hooks-library-for-data-fetching/" title="Permanent link for this link">
+      2020.11.23 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://swr.vercel.app" target="_blank" rel="noreferrer" class="perma" title="SWR – React Hooks library for data fetching">
+          SWR – React Hooks library for data fetching
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>The name “SWR” is derived from stale-while-revalidate, a HTTP cache invalidation strategy popularized by HTTP RFC 5861. SWR is a strategy to first return the data from cache (stale), then send the fetch request (revalidate), and finally come with the up-to-date data.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://willclarke.net/pill-uilabel-using-ibdesignables-3a897c44c0c">“Pill” UILabel using IBDesignables – Will Clarke</a> <a class="permalink" href="/links/2018/06/pill-uilabel-using-ibdesignables-will-clarke/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/06/pill-uilabel-using-ibdesignables-will-clarke/"><time datetime="2018-06-18T08:43:00-0500">June 18, 2018</time></a> · <a href="/tags/ios/">ios</a>, <a href="/tags/swift/">swift</a>, <a href="/tags/ui/">ui</a>, <a href="/tags/uikit/">uikit</a></p>
+<article id="thing-2788" class="thing--link">
+  <aside>
+    <a href="/links/2020/11/what-do-human-beings-need-rethinking-technology-and-the-good-society/" title="Permanent link for this link">
+      2020.11.15 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://theconvivialsociety.substack.com/p/what-do-human-beings-need-rethinking" target="_blank" rel="noreferrer" class="perma" title="What Do Human Beings Need?: Rethinking Technology and the Good Society">
+          What Do Human Beings Need?: Rethinking Technology and the Good Society
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://dilbert.com/strip/1992-09-08">Dilbert Comic Strip on 1992-09-08 | Dilbert by Scott Adams</a> <a class="permalink" href="/links/2018/06/dilbert-comic-strip-on-1992-09-08-dilbert-by-scott-adams/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/06/dilbert-comic-strip-on-1992-09-08-dilbert-by-scott-adams/"><time datetime="2018-06-11T06:48:00-0500">June 11, 2018</time></a> · <a href="/tags/dilbert/">dilbert</a>, <a href="/tags/funny/">funny</a>, <a href="/tags/programming/">programming</a></p>
+<article id="thing-2787" class="thing--quote">
+  <aside>
+    <a href="/quotes/2787/" title="Permanent link for this quote">
+      2020.11.14 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://theconvivialsociety.substack.com/p/structurally-induced-acedia" target="_blank" rel="noreferrer" class="perma" title="Structurally Induced Acedia">
+          Structurally Induced Acedia
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+            <blockquote><p>The burdens I have in view, of course, are those we now routinely associate with filtering and managing flows of information—a task which invites the constant deployment of new tools and techniques, which, in turn, often have counter-productive effects. Clearly, these are not altogether novel burdens, we may find complaints about the sort of thing we think of as “information overload” in connection with printing, but they are hardly getting easier to bear. And these burdens are not merely cognitive. They are affective as well. Tending to our information ecosystem, if we attempt it at all, requires a striking degree of vigilance and discipline. And as we noted at the outset, there is no given balance between place and speed, no natural context of relative meaningfulness to regulate the pace and quality of information for us. It’s on us to do so, daily, often minute by minute. We exist in a state of continuous and conscious attention triage, which can be exhausting, disorienting, and demoralizing.</p>
+</blockquote>
+            <p>
+        &mdash;
+        <cite>L. M. Sacasas</cite>
+      </p>
+    </div>
+
+
+    <a class="kind" title="See all quotes" href="/quotes/">
+      quote
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://dilbert.com/strip/2015-02-16">Day Of Arranging Zeroes And Ones - Dilbert Comic Strip on 2015-02-16 | Dilbert by Scott Adams</a> <a class="permalink" href="/links/2018/06/day-of-arranging-zeroes-and-ones-dilbert-comic-strip-on-2015-02-16-dilbert-by-scott-adams/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/06/day-of-arranging-zeroes-and-ones-dilbert-comic-strip-on-2015-02-16-dilbert-by-scott-adams/"><time datetime="2018-06-11T06:48:00-0500">June 11, 2018</time></a> · <a href="/tags/dilbert/">dilbert</a>, <a href="/tags/funny/">funny</a>, <a href="/tags/programming/">programming</a></p>
+<article id="thing-2786" class="thing--quote">
+  <aside>
+    <a href="/quotes/2786/" title="Permanent link for this quote">
+      2020.11.13 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+
+
+    <div class="details">
+            <blockquote><p>… the whole hierarchy [of society] should have its face set in the direction of a goal whose importance and even grandeur can be felt by all, from the highest to the lowest.</p>
+</blockquote>
+            <p>
+        &mdash;
+        <cite>Simone Weil, The Need for Roots, p. 14</cite>
+      </p>
+    </div>
+
+
+    <a class="kind" title="See all quotes" href="/quotes/">
+      quote
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://github.com/go-chi/chi">Chi</a> <a class="permalink" href="/links/2018/05/chi/">∞</a></h2>
-  <p>lightweight, idiomatic and composable router for building Go HTTP services</p>
+<article id="thing-2785" class="thing--link">
+  <aside>
+    <a href="/links/2020/10/goaccess-visual-web-log-analyzer/" title="Permanent link for this link">
+      2020.10.21 &#167;
+    </a>
+  </aside>
 
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/chi/"><time datetime="2018-05-29T19:41:00-0500">May 29, 2018</time></a> · <a href="/tags/api/">api</a>, <a href="/tags/golang/">golang</a>, <a href="/tags/http/">http</a>, <a href="/tags/webservices/">webservices</a></p>
+  <div class="content">
+    <div class="title">
+        <a href="https://goaccess.io/" target="_blank" rel="noreferrer" class="perma" title="GoAccess - Visual Web Log Analyzer">
+          GoAccess - Visual Web Log Analyzer
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
 
+
+    <div class="details">
+      <p>GoAccess is an open source real-time web log analyzer and interactive viewer that runs in a terminal or through your browser.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://serverless-stack.com/chapters/code-splitting-in-create-react-app.html">Code Splitting in Create React App | Serverless Stack</a> <a class="permalink" href="/links/2018/05/code-splitting-in-create-react-app-serverless-stack/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/code-splitting-in-create-react-app-serverless-stack/"><time datetime="2018-05-22T16:49:00-0500">May 22, 2018</time></a> · <a href="/tags/react/">react</a></p>
+<article id="thing-2784" class="thing--link">
+  <aside>
+    <a href="/links/2020/10/sebastienrosjint/" title="Permanent link for this link">
+      2020.10.19 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://github.com/sebastienros/jint" target="_blank" rel="noreferrer" class="perma" title="sebastienros/jint">
+          sebastienros/jint
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Jint is a Javascript interpreter for .NET which provides full ECMA 5.1 compliance and can run on any .NET platform. Because it doesn’t generate any .NET bytecode nor use the DLR it runs relatively small scripts faster. It’s available as a PCL on Nuget at <a href="https://www.nuget.org/packages/Jint">https://www.nuget.org/packages/Jint</a>.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://github.com/jamiebuilds/react-loadable">jamiebuilds/react-loadable: A higher order component for loading components with promises.</a> <a class="permalink" href="/links/2018/05/jamiebuildsreact-loadable-a-higher-order-component-for-loading-components-with-promises/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/jamiebuildsreact-loadable-a-higher-order-component-for-loading-components-with-promises/"><time datetime="2018-05-22T16:39:00-0500">May 22, 2018</time></a> · <a href="/tags/javascript/">javascript</a>, <a href="/tags/performance/">performance</a>, <a href="/tags/react/">react</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://hackernoon.com/optimising-your-application-bundle-size-with-webpack-e85b00bab579">Optimising your application bundle size with webpack</a> <a class="permalink" href="/links/2018/05/optimising-your-application-bundle-size-with-webpack/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/optimising-your-application-bundle-size-with-webpack/"><time datetime="2018-05-22T16:38:00-0500">May 22, 2018</time></a> · <a href="/tags/javascript/">javascript</a>, <a href="/tags/react/">react</a>, <a href="/tags/webpack/">webpack</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://medium.freecodecamp.org/the-best-way-to-bind-event-handlers-in-react-282db2cf1530">The best way to bind event handlers in React – freeCodeCamp</a> <a class="permalink" href="/links/2018/05/the-best-way-to-bind-event-handlers-in-react-freecodecamp/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/the-best-way-to-bind-event-handlers-in-react-freecodecamp/"><time datetime="2018-05-22T16:27:00-0500">May 22, 2018</time></a> · <a href="/tags/javascript/">javascript</a>, <a href="/tags/react/">react</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://medium.com/@foxdonut00/you-dont-need-redux-mobx-rxjs-cerebral-6a735b150a02">You Don’t Need Redux, MobX, RxJS, Cerebral – Fox Donut – Medium</a> <a class="permalink" href="/links/2018/05/you-dont-need-redux-mobx-rxjs-cerebral-fox-donut-medium/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/you-dont-need-redux-mobx-rxjs-cerebral-fox-donut-medium/"><time datetime="2018-05-11T10:59:00-0500">May 11, 2018</time></a> · <a href="/tags/javascript/">javascript</a>, <a href="/tags/patterns/">patterns</a>, <a href="/tags/react/">react</a>, <a href="/tags/redux/">redux</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://github.com/Simonwep/selection">Simonwep/selection: Selection - A simple and lightweight library to realize visual DOM Selections. No jQuery. Supports any CSS library</a> <a class="permalink" href="/links/2018/05/simonwepselection-selection-a-simple-and-lightweight-library-to-realize-visual-dom-selections-no-jqu/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/simonwepselection-selection-a-simple-and-lightweight-library-to-realize-visual-dom-selections-no-jqu/"><time datetime="2018-05-11T10:59:00-0500">May 11, 2018</time></a> · <a href="/tags/javascript/">javascript</a>, <a href="/tags/ui/">ui</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://hacks.mozilla.org/2018/04/testing-strategies-for-react-and-redux/">Testing Strategies for React and Redux – Mozilla Hacks – the Web developer blog</a> <a class="permalink" href="/links/2018/05/testing-strategies-for-react-and-redux-mozilla-hacks-the-web-developer-blog/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/testing-strategies-for-react-and-redux-mozilla-hacks-the-web-developer-blog/"><time datetime="2018-05-10T08:40:00-0500">May 10, 2018</time></a> · <a href="/tags/javascript/">javascript</a>, <a href="/tags/react/">react</a>, <a href="/tags/testing/">testing</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://github.com/ocochard/graphpath">ocochard/graphpath: Graphpath generates an ASCII network diagram from the route table of a Unix/Linux</a> <a class="permalink" href="/links/2018/05/ocochardgraphpath-graphpath-generates-an-ascii-network-diagram-from-the-route-table-of-a-unixlinux/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/ocochardgraphpath-graphpath-generates-an-ascii-network-diagram-from-the-route-table-of-a-unixlinux/"><time datetime="2018-05-07T09:05:00-0500">May 7, 2018</time></a> · <a href="/tags/bash/">bash</a>, <a href="/tags/networking/">networking</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://github.com/SnapKit/SnapKit">SnapKit/SnapKit: A Swift Autolayout DSL for iOS &amp; OS X</a> <a class="permalink" href="/links/2018/05/snapkitsnapkit-a-swift-autolayout-dsl-for-ios-os-x/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/snapkitsnapkit-a-swift-autolayout-dsl-for-ios-os-x/"><time datetime="2018-05-07T07:12:00-0500">May 7, 2018</time></a> · <a href="/tags/autolayout/">autolayout</a>, <a href="/tags/ios/">ios</a>, <a href="/tags/swift/">swift</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://www.enlightenment.org/docs/c/start">C Primer</a> <a class="permalink" href="/links/2018/05/c-primer/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/05/c-primer/"><time datetime="2018-05-07T07:12:00-0500">May 7, 2018</time></a> · <a href="/tags/c/">c</a>, <a href="/tags/programming/">programming</a>, <a href="/tags/reference/">reference</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://www.nyctaper.com/">nyctaper | New York&#39;s live music archivist</a> <a class="permalink" href="/links/2018/04/nyctaper-new-yorks-live-music-archivist/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2018/04/nyctaper-new-yorks-live-music-archivist/"><time datetime="2018-04-26T08:31:00-0500">April 26, 2018</time></a> · <a href="/tags/live/">live</a>, <a href="/tags/music/">music</a></p>
-
-</article>
-
-<nav class="pagination">
-<a href="/page/25/">← Newer</a>  <span>Page 26 of 152</span>
-<a href="/page/27/">Older →</a></nav>
+<div class="pagination">
+<a href="/page/25/">&larr; Previous</a>  <a href="/page/27/">Next &rarr;</a></div>
   </main>
-  <footer class="site-footer">
-    <p>Matt</p>
+
+  <footer>
+    <img src="/octopus.svg" alt="It's an octopus">
+
+    <span>
+      &copy;
+      2026
+      &middot;
+      <a href="https://pushcartlabs.com/">made by matt grayson</a>
+    </span>
   </footer>
 </body>
 </html>

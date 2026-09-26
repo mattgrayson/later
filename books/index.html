@@ -1,37 +1,239 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <title>Books · Something Later</title>
-  <meta name="description" content="I should be extremely happy in your company.">    <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="I should be extremely happy in your company.">  
+  <!-- https://web.dev/articles/add-manifest#theme-color -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333333">
+
+  <link rel="icon" href="/media/277448b1cad9/favicon.png" type="image/png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/media/35b3f2cd4975/icon.png">
   <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+
+  <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/responsive.css">
 </head>
 <body>
-  <header class="site-header">
-    <p class="site-title"><a href="/">Something Later</a></p>
-    <p class="site-subtitle">I should be extremely happy in your company.</p>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/archive/">Archive</a>
-      <a href="/books/">Books</a>
-      <a href="/tags/">Tags</a>
-      <a href="/feed.xml">Feed</a>
-    </nav>
-  </header>
+  <header>
+    <h1>
+      <a href="/" title="Home">
+        Something Later
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v4.19l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V10.5Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </h1>
+
+<h2>Books</h2>  </header>
+
   <main>
-<h1 class="page-title">Books</h1>
-<h2>Books</h2>
-<ul class="books">
-  <li><a href="/books/american-nations-a-history-of-the-eleven-rival-regional-cultures-of-north/">American Nations: A History of the Eleven Rival Regional Cultures of North America</a> by Colin Woodard</li>
-  <li><a href="/books/growing-object-oriented-software-guided-by-tests/">Growing Object-Oriented Software, Guided by Tests</a> by Steve Freeman, Nat Pryce</li>
-  <li><a href="/books/laws-of-ux/">Laws of UX</a> by Jon Yablonski</li>
-  <li><a href="/books/reading-genesis-well/">Reading Genesis Well</a> by C. John Collins</li>
-  <li><a href="/books/the-certainty-of-faith/">The Certainty of Faith</a> by Herman Bavinck</li>
-</ul>
+    <section>
+      <nav>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="/links/" title="Links">Links</a></li>
+          <li><a href="/books/" title="Books">Books</a></li>
+          <li><a href="/notes/" title="Notes">Notes</a></li>
+          <li><a href="/quotes/" title="Quotes">Quotes</a></li>
+        </ul>
+      </nav>
+
+      <search>
+        <form action="/search/">
+          <label for="search">Search</label>
+          <input type="search" id="search" name="q">
+        </form>
+      </search>
+    </section>
+
+<article id="thing-3040" class="thing--book">
+  <aside>
+    <a href="/books/laws-of-ux/" title="Permanent link for this book">
+      2026.04.29 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title" title="Link to Laws of UX by Jon Yablonski">
+        <a href="https://lawsofux.com/" target="_blank" rel="noreferrer" class="perma" title="Laws of UX">
+          Laws of UX
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+    <div class="author">
+      Jon Yablonski
+    </div>
+
+    <div class="details">
+      <p>A designer’s guide to using psychology to design better digital products and services.</p>
+
+          </div>
+
+    <div class="attachment">
+      <img src="/media/69d9259b730a/714y4gr3irl-sy466-640.jpg" alt="Laws of UX">
+    </div>
+
+    <a class="kind" title="See all books" href="/books/">
+      book
+    </a>
+  </div>
+</article>
+
+<article id="thing-3039" class="thing--book">
+  <aside>
+    <a href="/books/growing-object-oriented-software-guided-by-tests/" title="Permanent link for this book">
+      2026.04.29 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title" title="Link to Growing Object-Oriented Software, Guided by Tests by Steve Freeman, Nat Pryce">
+        Growing Object-Oriented Software, Guided by Tests
+    </div>
+
+    <div class="author">
+      Steve Freeman, Nat Pryce
+    </div>
+
+
+    <div class="attachment">
+      <img src="/media/9b7263cec70a/81o7qx5qfjl-sy425-640.jpg" alt="Growing Object-Oriented Software, Guided by Tests">
+    </div>
+
+    <a class="kind" title="See all books" href="/books/">
+      book
+    </a>
+  </div>
+</article>
+
+<article id="thing-3029" class="thing--book">
+  <aside>
+    <a href="/books/american-nations-a-history-of-the-eleven-rival-regional-cultures-of-north/" title="Permanent link for this book">
+      2025.11.28 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title" title="Link to American Nations: A History of the Eleven Rival Regional Cultures of North America by Colin Woodard">
+        <a href="https://www.amazon.com/dp/0143122029?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank" rel="noreferrer" class="perma" title="American Nations: A History of the Eleven Rival Regional Cultures of North America">
+          American Nations: A History of the Eleven Rival Regional Cultures of North America
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+    <div class="author">
+      Colin Woodard
+    </div>
+
+    <div class="details">
+      <p>Something that Jana came across that I immediately added to my to-read pile.</p>
+<blockquote>
+<p>According to award-winning journalist and historian Colin Woodard, North America is made up of eleven distinct nations, each with its own unique historical roots. In American Nations he takes readers on a journey through the history of our fractured continent, offering a revolutionary and revelatory take on American identity, and how the conflicts between them have shaped our past and continue to mold our future.</p>
+</blockquote>
+
+          </div>
+
+    <div class="attachment">
+      <img src="/media/cfd3b56c7184/american-nations-640.jpg" alt="American Nations: A History of the Eleven Rival Regional Cultures of North America">
+    </div>
+
+    <a class="kind" title="See all books" href="/books/">
+      book
+    </a>
+  </div>
+</article>
+
+<article id="thing-3027" class="thing--book">
+  <aside>
+    <a href="/books/reading-genesis-well/" title="Permanent link for this book">
+      2025.11.11 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title" title="Link to Reading Genesis Well by C. John Collins">
+        <a href="https://zondervanacademic.com/products/reading-genesis-well" target="_blank" rel="noreferrer" class="perma" title="Reading Genesis Well">
+          Reading Genesis Well
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+    <div class="author">
+      C. John Collins
+    </div>
+
+
+    <div class="attachment">
+      <img src="/media/087962f1fb96/9780310598572-c25124cf117d5566842eaaf05a27d036-640.jpg" alt="Reading Genesis Well">
+    </div>
+
+    <a class="kind" title="See all books" href="/books/">
+      book
+    </a>
+  </div>
+</article>
+
+<article id="thing-3011" class="thing--book">
+  <aside>
+    <a href="/books/the-certainty-of-faith/" title="Permanent link for this book">
+      2025.06.17 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title" title="Link to The Certainty of Faith by Herman Bavinck">
+        <a href="https://www.wtsbooks.com/products/the-certainty-of-faith-9781955859073" target="_blank" rel="noreferrer" class="perma" title="The Certainty of Faith">
+          The Certainty of Faith
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+    <div class="author">
+      Herman Bavinck
+    </div>
+
+    <div class="details">
+      <p>“Originally published in Dutch in 1901 and first translated into English in 1980, this new edition—beautifully rendered by Daniel Schrock with assistance from Albert Gootjes—captures the clarity, conviction, and theological depth of Herman Bavinck’s original work.”</p>
+<p>A small book (literally) but I always appreciate how Bavinck approaches things.</p>
+
+          </div>
+
+    <div class="attachment">
+      <img src="/media/40dc21359d69/certainty-of-faith-cover-640.png" alt="The Certainty of Faith by Herman Bavinck">
+    </div>
+
+    <a class="kind" title="See all books" href="/books/">
+      book
+    </a>
+  </div>
+</article>
+
   </main>
-  <footer class="site-footer">
-    <p>Matt</p>
+
+  <footer>
+    <img src="/octopus.svg" alt="It's an octopus">
+
+    <span>
+      &copy;
+      2026
+      &middot;
+      <a href="https://pushcartlabs.com/">made by matt grayson</a>
+    </span>
   </footer>
 </body>
 </html>

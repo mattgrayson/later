@@ -1,220 +1,376 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <title>Something Later · Page 8</title>
-  <meta name="description" content="I should be extremely happy in your company.">    <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="I should be extremely happy in your company.">  
+  <!-- https://web.dev/articles/add-manifest#theme-color -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333333">
+
+  <link rel="icon" href="/media/277448b1cad9/favicon.png" type="image/png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/media/35b3f2cd4975/icon.png">
   <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+
+  <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/responsive.css">
 </head>
 <body>
-  <header class="site-header">
-    <p class="site-title"><a href="/">Something Later</a></p>
-    <p class="site-subtitle">I should be extremely happy in your company.</p>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/archive/">Archive</a>
-      <a href="/books/">Books</a>
-      <a href="/tags/">Tags</a>
-      <a href="/feed.xml">Feed</a>
-    </nav>
+  <header>
+    <h1>
+      <a href="/" title="Home">
+        Something Later
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v4.19l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V10.5Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </h1>
+
   </header>
+
   <main>
-<article class="entry entry-link">
-  <h2><a href="https://taoofmac.com/space/protocols/rdp">RDP H.264/AVC Acceleration up to 60 fps</a> <a class="permalink" href="/links/2022/10/rdp-h264avc-acceleration-up-to-60-fps/">∞</a></h2>
-  <p>On Windows 10/Server 2016 and above, you can enable nearly 60fps connections between clients using H.264, which considerably improves the user experience.</p>
-<ol>
-<li>Run gpedit.msc</li>
-<li>Go to Computer Configuration -&gt; Administrative Templates -&gt; Windows Components -&gt; Remote Desktop Services -&gt; Remote Desktop Session Host -&gt; Remote Session Environment
-<ol>
-<li>Enable Prioritize H.264/AVC 444 Graphics mode for Remote Desktop</li>
-<li>Enable Configure H.264/AVC hardware encoding for Remote Desktop</li>
-</ol>
-</li>
-<li>Run gpupdate /force</li>
-<li>Run regedit</li>
-<li>Create a DWORD(32-bit) key named “DWMFRAMEINTERVAL” under HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations with the value 15 (decimal).</li>
-</ol>
+    <section>
+      <nav>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="/links/" title="Links">Links</a></li>
+          <li><a href="/books/" title="Books">Books</a></li>
+          <li><a href="/notes/" title="Notes">Notes</a></li>
+          <li><a href="/quotes/" title="Quotes">Quotes</a></li>
+        </ul>
+      </nav>
 
-  <p class="meta">
-  <a class="permalink" href="/links/2022/10/rdp-h264avc-acceleration-up-to-60-fps/"><time datetime="2022-10-24T11:35:00-0500">October 24, 2022</time></a> · <a href="/tags/admin/">admin</a>, <a href="/tags/rdp/">rdp</a>, <a href="/tags/remote/">remote</a>, <a href="/tags/sys/">sys</a>, <a href="/tags/windows/">windows</a></p>
+      <search>
+        <form action="/search/">
+          <label for="search">Search</label>
+          <input type="search" id="search" name="q">
+        </form>
+      </search>
+    </section>
 
+<article id="thing-2973" class="thing--link">
+  <aside>
+    <a href="/links/2025/02/localsend/" title="Permanent link for this link">
+      2025.02.04 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title">
+        <a href="https://localsend.org/" target="_blank" rel="noreferrer" class="perma" title="LocalSend">
+          LocalSend
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>An open-source cross-platform alternative to AirDrop</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://research.swtch.com/deps">Our Software Dependency Problem</a> <a class="permalink" href="/links/2022/10/our-software-dependency-problem/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/10/our-software-dependency-problem/"><time datetime="2022-10-20T19:20:00-0500">October 20, 2022</time></a> · <a href="/tags/development/">development</a>, <a href="/tags/software/">software</a></p>
+<article id="thing-2972" class="thing--note">
+  <aside>
+    <a href="/2025/02/antithesis-to-death/" title="Permanent link for this note">
+      2025.02.04 &#167;
+    </a>
+  </aside>
 
-</article>
+  <div class="content">
+    <div class="title">
+        Antithesis to Death
+    </div>
 
-<article class="entry entry-quote">
-  <blockquote><p>The only way I know how to make something good is to ship and iterate. Get something usable, use it, get feedback, revise. The early versions <em>will not be as good</em> as later versions. That’s ok! MVPs are imperfect and incomplete. Iteration is what counts, not the guess at a v1.</p>
-</blockquote>
-  <p class="citation">— <a href="https://twitter.com/schnarfed/status/1582864561123643393">Ryan Barrett</a></p>
-  <p class="meta">
-  <a class="permalink" href="/quotes/2901/"><time datetime="2022-10-20T00:26:00-0500">October 20, 2022</time></a> · <a href="/tags/development/">development</a>, <a href="/tags/software/">software</a>, <a href="/tags/work/">work</a></p>
 
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://coolors.co/palettes/trending">Coolors: The super fast color palettes generator</a> <a class="permalink" href="/links/2022/10/coolors-the-super-fast-color-palettes-generator/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/10/coolors-the-super-fast-color-palettes-generator/"><time datetime="2022-10-18T11:25:00-0500">October 18, 2022</time></a> · <a href="/tags/color/">color</a>, <a href="/tags/design/">design</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://github.com/swisspost/design-system">swisspost/design-system</a> <a class="permalink" href="/links/2022/10/swisspostdesign-system/">∞</a></h2>
-  <p>The Swiss Post Design System pattern library for a consistent and accessible user experience across the web platform.</p>
-
-  <p class="meta">
-  <a class="permalink" href="/links/2022/10/swisspostdesign-system/"><time datetime="2022-10-10T13:03:00-0500">October 10, 2022</time></a> · <a href="/tags/bootstrap/">bootstrap</a>, <a href="/tags/css/">css</a>, <a href="/tags/design/">design</a>, <a href="/tags/web/">web</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://blogs.mereorthodoxy.com/jake/the-people-who-dont-ask-questions/">The People Who Don’t Ask Questions</a> <a class="permalink" href="/links/2022/09/the-people-who-dont-ask-questions/">∞</a></h2>
-  <blockquote>
-<p>It’s an incurious mentality about the world tied to a biblicistic sensibility. Nearly always it leads to an addiction to easy answers and an inability to use wisdom and a strong dependence on the appropriately credentialed guru to offer us The Right Answers.</p>
-</blockquote>
-
-  <p class="meta">
-  <a class="permalink" href="/links/2022/09/the-people-who-dont-ask-questions/"><time datetime="2022-09-28T15:20:00-0500">September 28, 2022</time></a> · <a href="/tags/christianity/">christianity</a>, <a href="/tags/church/">church</a>, <a href="/tags/culture/">culture</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox</a> <a class="permalink" href="/links/2022/09/a-complete-guide-to-flexbox/">∞</a></h2>
-  <p>Because I can never remember the nuance of some of the flexbox-related properties</p>
-
-  <p class="meta">
-  <a class="permalink" href="/links/2022/09/a-complete-guide-to-flexbox/"><time datetime="2022-09-26T00:00:00-0500">September 26, 2022</time></a> · <a href="/tags/css/">css</a>, <a href="/tags/flexbox/">flexbox</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://world.hey.com/jorge/aging-programmer-d448bdec">Aging programmer</a> <a class="permalink" href="/links/2022/09/aging-programmer/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/09/aging-programmer/"><time datetime="2022-09-24T20:13:00-0500">September 24, 2022</time></a> · <a href="/tags/programming/">programming</a>, <a href="/tags/work/">work</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://www.nginx.com/blog/rate-limiting-nginx/">Rate Limiting with NGINX and NGINX Plus</a> <a class="permalink" href="/links/2022/09/rate-limiting-with-nginx-and-nginx-plus/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/09/rate-limiting-with-nginx-and-nginx-plus/"><time datetime="2022-09-19T12:39:00-0500">September 19, 2022</time></a> · <a href="/tags/devops/">devops</a>, <a href="/tags/nginx/">nginx</a>, <a href="/tags/security/">security</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://layout.bradwoods.io">CSS Layout Generator</a> <a class="permalink" href="/links/2022/09/css-layout-generator/">∞</a></h2>
-  <p>The CSS Layout Generator is a tool for creating the CSS &amp; HTML for layout components.</p>
-
-  <p class="meta">
-  <a class="permalink" href="/links/2022/09/css-layout-generator/"><time datetime="2022-09-17T16:55:00-0500">September 17, 2022</time></a> · <a href="/tags/css/">css</a>, <a href="/tags/html/">html</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://jenslarsen.nl/5-levels-of-walking-bass-and-chords-a-great-comping-approach/">5 Levels of Walking Bass And Chords – A Great Comping Approach | Jens Larsen</a> <a class="permalink" href="/links/2022/09/5-levels-of-walking-bass-and-chords-a-great-comping-approach-jens-larsen/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/09/5-levels-of-walking-bass-and-chords-a-great-comping-approach-jens-larsen/"><time datetime="2022-09-17T15:31:00-0500">September 17, 2022</time></a> · <a href="/tags/bass/">bass</a>, <a href="/tags/music/">music</a>, <a href="/tags/theory/">theory</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://www.youtube.com/watch?v=ws6Ql411sG4">The SIMPLEST walking bass line formula</a> <a class="permalink" href="/links/2022/09/the-simplest-walking-bass-line-formula/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/09/the-simplest-walking-bass-line-formula/"><time datetime="2022-09-17T00:00:00-0500">September 17, 2022</time></a> · <a href="/tags/bass/">bass</a>, <a href="/tags/music/">music</a>, <a href="/tags/theory/">theory</a>, <a href="/tags/videos/">videos</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="https://blog.codepen.io/2022/08/03/379-chris-alex-have-been-running-codepen-for-10-years-what-have-they-learned-heres-the-top-10/">The High Low Principle</a> <a class="permalink" href="/links/2022/09/the-high-low-principle/">∞</a></h2>
-  <blockquote>
-<p>Only do things that are either:</p>
-<ul>
-<li>High time, high value</li>
-<li>Low time, low value</li>
-</ul>
-<p>As in, they take a long time but are going to make a big difference. Or they won’t take too long, don’t ask too much of you, but are still helpful. This is the answer to the build vs buy conundrum. It’s a buy for everything in between.”</p>
+    <div class="details">
+      <p>John Murray’s description of eternal life:</p>
+<blockquote>
+<p>… it is life that death cannot invade and life that cannot be forfeited …</p>
 </blockquote>
 
-  <p class="meta">
-  <a class="permalink" href="/links/2022/09/the-high-low-principle/"><time datetime="2022-09-08T00:00:00-0500">September 8, 2022</time></a> · <a href="/tags/productivity/">productivity</a>, <a href="/tags/work/">work</a></p>
+          </div>
 
+
+    <a class="kind" title="See all notes" href="/notes/">
+      note
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://shoelace.style">Shoelace: A forward-thinking library of web components.</a> <a class="permalink" href="/links/2022/09/shoelace-a-forward-thinking-library-of-web-components/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/09/shoelace-a-forward-thinking-library-of-web-components/"><time datetime="2022-09-02T21:41:00-0500">September 2, 2022</time></a> · <a href="/tags/components/">components</a>, <a href="/tags/html/">html</a>, <a href="/tags/web/">web</a></p>
+<article id="thing-2971" class="thing--link">
+  <aside>
+    <a href="/links/2025/02/6-css-snippets-every-front-end-developer-should-know-in-2025/" title="Permanent link for this link">
+      2025.02.02 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://nerdy.dev/6-css-snippets-every-front-end-developer-should-know-in-2025" target="_blank" rel="noreferrer" class="perma" title="6 CSS Snippets Every Front-End Developer Should Know In 2025">
+          6 CSS Snippets Every Front-End Developer Should Know In 2025
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Good rundown on some things you can do now with html/css features like page transitions, dialogs, etc.</p>
+<blockquote>
+<p>AI is not going to give you this CSS.</p>
+</blockquote>
+<p>😏</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://antonz.org/sqlite-is-not-a-toy-database/">SQLite is not a toy database</a> <a class="permalink" href="/links/2022/08/sqlite-is-not-a-toy-database/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/08/sqlite-is-not-a-toy-database/"><time datetime="2022-08-26T11:31:00-0500">August 26, 2022</time></a> · <a href="/tags/database/">database</a>, <a href="/tags/sqlite/">sqlite</a></p>
+<article id="thing-2970" class="thing--link">
+  <aside>
+    <a href="/links/2025/01/should-we-use-ai-and-llms-for-christian-apologetics/" title="Permanent link for this link">
+      2025.01.23 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://lukeplant.me.uk/blog/posts/should-we-use-llms-for-christian-apologetics/" target="_blank" rel="noreferrer" class="perma" title="Should we use AI and LLMs for Christian Apologetics?">
+          Should we use AI and LLMs for Christian Apologetics?
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Well-reasoned and does a good job of spelling out exactly what risks come from relying on LLMs for anything where accuracy/reliability matters (not just in the context he’s talking about).</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://web.stanford.edu/~ouster/cgi-bin/sayings.php">John Ousterhout → Favorite Sayings</a> <a class="permalink" href="/links/2022/08/john-ousterhout-favorite-sayings/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/08/john-ousterhout-favorite-sayings/"><time datetime="2022-08-16T22:25:00-0500">August 16, 2022</time></a> · <a href="/tags/computer/">computer</a>, <a href="/tags/quotes/">quotes</a>, <a href="/tags/science/">science</a></p>
+<article id="thing-2969" class="thing--quote">
+  <aside>
+    <a href="/quotes/2969/" title="Permanent link for this quote">
+      2025.01.20 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        On Romans 5:6
+    </div>
+
+
+    <div class="details">
+            <blockquote><p>If we take the love of God for granted we shall not appreciate the
+sequence of the apostles thought. But when we assess our weakness and particularly our ungodliness, then we discover both the need and the marvel of the proof God has given. What looms up in our conviction when our ungodliness is properly weighed is our detestability and the wrath of God, and it is impossible to take God’s love for granted. That God could love the ungodly, far less that he did love them, would never have entered into the heart of man (cf. I Cor. 2:9, 10). On that background the text must be understood. The marvel of God’s love is that it was love to the ungodly. And here is the proof-“Christ died for the ungodly”. And not only so. When Christ died for them they were still weak, that is to say, they were still ungodly and contemplated as ungodly. Hence the love of which the death of Christ is the expression and provision is a love exercised to them as ungodly. It is not a love constrained by commendable qualities in them, not even by the qualities which they would one day exhibit by the power of God’s grace. It is an antecedent love because it is the love presupposed in the death of Christ for them while they were still in misery and sin. It is not the love of complacency but love that finds its whole urge and incentive in the goodness of God. That is the kind of love the death of Christ demonstrates and it is a love efficient to a saving purpose because the death of Christ is on behalf of the ungodly and therefore to the end of securing the high destiny which the context has in view.</p>
+</blockquote>
+            <p>
+        &mdash;
+        <cite>John Murray, The Epistle to the Romans</cite>
+      </p>
+    </div>
+
+
+    <a class="kind" title="See all quotes" href="/quotes/">
+      quote
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://mtlynch.io/tinypilot-redesign/">I Regret my $46k Website Redesign · mtlynch.io</a> <a class="permalink" href="/links/2022/08/i-regret-my-46k-website-redesign-mtlynchio/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/08/i-regret-my-46k-website-redesign-mtlynchio/"><time datetime="2022-08-16T22:23:00-0500">August 16, 2022</time></a> · <a href="/tags/management/">management</a>, <a href="/tags/project/">project</a>, <a href="/tags/web/">web</a></p>
+<article id="thing-2968" class="thing--link">
+  <aside>
+    <a href="/links/2025/01/totebook-by-studio-neat/" title="Permanent link for this link">
+      2025.01.17 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://www.studioneat.com/products/totebook?variant=39388035973185" target="_blank" rel="noreferrer" class="perma" title="Totebook by Studio Neat">
+          Totebook by Studio Neat
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>The mini size could be a good option if I ever decide to switch from my medium-size Leuchtturm notebooks.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://quicktype.io/">quicktype</a> <a class="permalink" href="/links/2022/08/quicktype/">∞</a></h2>
-  <p>Convert JSON to Swift, C#, TypeScript, Objective-C, Go, Java, C++ and more • quicktype</p>
+<article id="thing-2967" class="thing--link">
+  <aside>
+    <a href="/links/2025/01/btop/" title="Permanent link for this link">
+      2025.01.16 &#167;
+    </a>
+  </aside>
 
-  <p class="meta">
-  <a class="permalink" href="/links/2022/08/quicktype/"><time datetime="2022-08-16T00:00:00-0500">August 16, 2022</time></a> · <a href="/tags/dotnet/">dotnet</a>, <a href="/tags/json/">json</a>, <a href="/tags/strongly/">strongly</a>, <a href="/tags/typed/">typed</a></p>
+  <div class="content">
+    <div class="title">
+        <a href="https://github.com/aristocratos/btop" target="_blank" rel="noreferrer" class="perma" title="btop">
+          btop
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
 
+
+    <div class="details">
+      <p>A better <code>top</code>-style resource monitor to show usage/stats for processor, memory, disks, network and processes.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://stackoverflow.com/a/71186374">FFMPEG how to increase the volume of copied audio? - Stack Overflow</a> <a class="permalink" href="/links/2022/08/ffmpeg-how-to-increase-the-volume-of-copied-audio-stack-overflow/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/08/ffmpeg-how-to-increase-the-volume-of-copied-audio-stack-overflow/"><time datetime="2022-08-16T00:00:00-0500">August 16, 2022</time></a> · <a href="/tags/audio/">audio</a>, <a href="/tags/ffmpeg/">ffmpeg</a></p>
+<article id="thing-2966" class="thing--link">
+  <aside>
+    <a href="/links/2025/01/two-rules-of-software-creation/" title="Permanent link for this link">
+      2025.01.11 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://asktheuxer.com/2025/01/07/the-two-rules-of-software-creation-from-which-every-problem-derives/" target="_blank" rel="noreferrer" class="perma" title="Two Rules Of Software Creation">
+          Two Rules Of Software Creation
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <blockquote>
+<p>Humans can not accurately describe what they want out of a software system until it exists.
+Humans can not accurately predict how long any software effort will take beyond four weeks. And after 2 weeks it is already dicey.</p>
+</blockquote>
+<p>I’m sure there are exceptions that prove the rule, but I tend to agree with these statements.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="https://www.tomrenner.com/blog/2022-06-09/cull-your-dependencies">Cull your dependencies</a> <a class="permalink" href="/links/2022/07/cull-your-dependencies/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2022/07/cull-your-dependencies/"><time datetime="2022-07-08T00:00:00-0500">July 8, 2022</time></a> · <a href="/tags/development/">development</a>, <a href="/tags/software/">software</a></p>
+<article id="thing-2965" class="thing--quote">
+  <aside>
+    <a href="/quotes/2965/" title="Permanent link for this quote">
+      2025.01.10 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        It&#39;s snowing this morning
+    </div>
+
+
+    <div class="details">
+            <blockquote><p>His soul swooned slowly as he heard the snow falling faintly through the universe and faintly falling, like the descent of their last end, upon all the living and the dead.</p>
+</blockquote>
+            <p>
+        &mdash;
+        <cite>James Joyce, The Dead</cite>
+      </p>
+    </div>
+
+
+    <a class="kind" title="See all quotes" href="/quotes/">
+      quote
+    </a>
+  </div>
 </article>
 
-<nav class="pagination">
-<a href="/page/7/">← Newer</a>  <span>Page 8 of 152</span>
-<a href="/page/9/">Older →</a></nav>
+<article id="thing-2964" class="thing--link">
+  <aside>
+    <a href="/links/2025/01/xbar/" title="Permanent link for this link">
+      2025.01.08 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title">
+        <a href="https://github.com/matryer/xbar" target="_blank" rel="noreferrer" class="perma" title="xbar">
+          xbar
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Lets you put the output from any script/program in your macOS menu bar.</p>
+<p>Interesting also that it’s written using <a href="https://github.com/wailsapp/wails">Wails.app</a>.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
+</article>
+
+<div class="pagination">
+<a href="/page/7/">&larr; Previous</a>  <a href="/page/9/">Next &rarr;</a></div>
   </main>
-  <footer class="site-footer">
-    <p>Matt</p>
+
+  <footer>
+    <img src="/octopus.svg" alt="It's an octopus">
+
+    <span>
+      &copy;
+      2026
+      &middot;
+      <a href="https://pushcartlabs.com/">made by matt grayson</a>
+    </span>
   </footer>
 </body>
 </html>

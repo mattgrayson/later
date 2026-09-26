@@ -1,43 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <title>How to preview git-pull without doing fetch? - Stack Overflow · Something Later</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
 <meta name="description" content="After doing a git fetch, do a git log HEAD..origin to show the log entries between your last common commit and the origin branch. To show the diffs, use either git log -p HEAD..origin to show each pa…">
 <link rel="canonical" href="https://somethinglater.com/links/2008/12/how-to-preview-git-pull-without-doing-fetch-stack-overflow/">
-  <link rel="stylesheet" href="/style.css">
+
+  <!-- https://web.dev/articles/add-manifest#theme-color -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333333">
+
+  <link rel="icon" href="/media/277448b1cad9/favicon.png" type="image/png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/media/35b3f2cd4975/icon.png">
   <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+
+  <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/responsive.css">
 </head>
 <body>
-  <header class="site-header">
-    <p class="site-title"><a href="/">Something Later</a></p>
-    <p class="site-subtitle">I should be extremely happy in your company.</p>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/archive/">Archive</a>
-      <a href="/books/">Books</a>
-      <a href="/tags/">Tags</a>
-      <a href="/feed.xml">Feed</a>
-    </nav>
+  <header>
+    <h1>
+      <a href="/" title="Home">
+        Something Later
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v4.19l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V10.5Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </h1>
+
   </header>
+
   <main>
-<article class="entry entry-link">
-  <h1><a href="http://stackoverflow.com/questions/180272/how-to-preview-git-pull-without-doing-fetch">How to preview git-pull without doing fetch? - Stack Overflow</a> <a class="permalink" href="/links/2008/12/how-to-preview-git-pull-without-doing-fetch-stack-overflow/">∞</a></h1>
-  <p>After doing a git fetch, do a git log HEAD..origin to show the log entries between your last common commit and the origin branch. To show the diffs, use either git log -p HEAD..origin to show each patch, or git diff HEAD…origin (three dots not two) to show a single diff.</p>
+    <section>
+      <nav>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="/links/" title="Links">Links</a></li>
+          <li><a href="/books/" title="Books">Books</a></li>
+          <li><a href="/notes/" title="Notes">Notes</a></li>
+          <li><a href="/quotes/" title="Quotes">Quotes</a></li>
+        </ul>
+      </nav>
+
+      <search>
+        <form action="/search/">
+          <label for="search">Search</label>
+          <input type="search" id="search" name="q">
+        </form>
+      </search>
+    </section>
+
+<article id="thing-1319" class="thing--link" data-pagefind-body data-pagefind-meta="title:How to preview git-pull without doing fetch? - Stack Overflow" data-pagefind-filter="type:Link" data-pagefind-sort="date:2008-12-09T19:32:00-0600">
+  <aside>
+    <a href="/links/2008/12/how-to-preview-git-pull-without-doing-fetch-stack-overflow/" title="Permanent link for this link" data-pagefind-ignore>
+      2008.12.09 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title">
+        <a href="http://stackoverflow.com/questions/180272/how-to-preview-git-pull-without-doing-fetch" target="_blank" rel="noreferrer" class="perma" title="How to preview git-pull without doing fetch? - Stack Overflow">
+          How to preview git-pull without doing fetch? - Stack Overflow
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>After doing a git fetch, do a git log HEAD..origin to show the log entries between your last common commit and the origin branch. To show the diffs, use either git log -p HEAD..origin to show each patch, or git diff HEAD…origin (three dots not two) to show a single diff.</p>
 <p>There normally isn’t any need to undo a fetch, because doing a fetch only updates the remote branch and none of your branches. If you’re not prepared to do a pull and merge in all the remote commits, you can use git cherry-pick to accept only the specific remote commits you want. Later, when you’re ready to get everything, a git pull will merge in the rest of the commits.</p>
 <p>I’m not entirely sure why you want to avoid the use of git fetch. All git fetch does is update your local copy of a remote branch. This local copy doesn’t have anything to do with any of your branches, and it doesn’t have anything to do with uncommitted local changes.</p>
 
-  <p class="meta">
-  <a class="permalink" href="/links/2008/12/how-to-preview-git-pull-without-doing-fetch-stack-overflow/"><time datetime="2008-12-09T19:32:00-0600">December 9, 2008</time></a> · <a href="/tags/git/">git</a>, <a href="/tags/howto/">howto</a>, <a href="/tags/tips/">tips</a></p>
+          </div>
 
+
+    <a class="kind" title="See all links" href="/links/" data-pagefind-ignore>
+      link
+    </a>
+  </div>
 </article>
 
-<nav class="neighbors">
-<a href="/links/2008/12/pyquery/">← pyquery</a>  <a class="next" href="/links/2008/12/providing-default-content-in-rails-layouts/">Providing default content in Rails layouts →</a></nav>
   </main>
-  <footer class="site-footer">
-    <p>Matt</p>
+
+  <footer>
+    <img src="/octopus.svg" alt="It's an octopus">
+
+    <span>
+      &copy;
+      2026
+      &middot;
+      <a href="https://pushcartlabs.com/">made by matt grayson</a>
+    </span>
   </footer>
 </body>
 </html>

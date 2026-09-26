@@ -1,193 +1,355 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
   <title>Something Later · Page 100</title>
-  <meta name="description" content="I should be extremely happy in your company.">    <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="description" content="I should be extremely happy in your company.">  
+  <!-- https://web.dev/articles/add-manifest#theme-color -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333333">
+
+  <link rel="icon" href="/media/277448b1cad9/favicon.png" type="image/png">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/media/35b3f2cd4975/icon.png">
   <link rel="alternate" type="application/atom+xml" title="Something Later" href="/feed.xml">
+
+  <link rel="stylesheet" href="/site.css">
+  <link rel="stylesheet" href="/responsive.css">
 </head>
 <body>
-  <header class="site-header">
-    <p class="site-title"><a href="/">Something Later</a></p>
-    <p class="site-subtitle">I should be extremely happy in your company.</p>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/archive/">Archive</a>
-      <a href="/books/">Books</a>
-      <a href="/tags/">Tags</a>
-      <a href="/feed.xml">Feed</a>
-    </nav>
+  <header>
+    <h1>
+      <a href="/" title="Home">
+        Something Later
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+          <path fill-rule="evenodd" d="M19.5 21a3 3 0 0 0 3-3V9a3 3 0 0 0-3-3h-5.379a.75.75 0 0 1-.53-.22L11.47 3.66A2.25 2.25 0 0 0 9.879 3H4.5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h15Zm-6.75-10.5a.75.75 0 0 0-1.5 0v4.19l-1.72-1.72a.75.75 0 0 0-1.06 1.06l3 3a.75.75 0 0 0 1.06 0l3-3a.75.75 0 1 0-1.06-1.06l-1.72 1.72V10.5Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+    </h1>
+
   </header>
+
   <main>
-<article class="entry entry-link">
-  <h2><a href="http://flyingmeat.com/flygesture/">Flying Meat: FlyGesture</a> <a class="permalink" href="/links/2008/01/flying-meat-flygesture/">∞</a></h2>
-  <p>Gestures for Mac OS X</p>
+    <section>
+      <nav>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="/links/" title="Links">Links</a></li>
+          <li><a href="/books/" title="Books">Books</a></li>
+          <li><a href="/notes/" title="Notes">Notes</a></li>
+          <li><a href="/quotes/" title="Quotes">Quotes</a></li>
+        </ul>
+      </nav>
 
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/flying-meat-flygesture/"><time datetime="2008-01-30T15:35:00-0600">January 30, 2008</time></a> · <a href="/tags/macosx/">macosx</a>, <a href="/tags/software/">software</a></p>
+      <search>
+        <form action="/search/">
+          <label for="search">Search</label>
+          <input type="search" id="search" name="q">
+        </form>
+      </search>
+    </section>
 
+<article id="thing-2053" class="thing--link">
+  <aside>
+    <a href="/links/2013/05/framer-prototyping-tool/" title="Permanent link for this link">
+      2013.05.21 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title">
+        <a href="http://www.framerjs.com/" target="_blank" rel="noreferrer" class="perma" title="Framer - Prototyping Tool">
+          Framer - Prototyping Tool
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://reference.sitepoint.com/css">CSS Reference</a> <a class="permalink" href="/links/2008/01/css-reference/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/css-reference/"><time datetime="2008-01-30T10:32:00-0600">January 30, 2008</time></a> · <a href="/tags/css/">css</a>, <a href="/tags/reference/">reference</a>, <a href="/tags/webdevelopment/">webdevelopment</a></p>
+<article id="thing-2052" class="thing--link">
+  <aside>
+    <a href="/links/2013/05/apply-blur-to-uiview/" title="Permanent link for this link">
+      2013.05.13 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://stackoverflow.com/questions/11130923/apply-blur-to-uiview/11131032#11131032" target="_blank" rel="noreferrer" class="perma" title="Apply blur to UIView">
+          Apply blur to UIView
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>CIImage *imageToBlur = [CIImage imageWithCGImage:viewImage.CGImage];</p>
+<p>CIFilter *gaussianBlurFilter = [CIFilter filterWithName: @“CIGaussianBlur”];</p>
+<p>[gaussianBlurFilter setValue:imageToBlur forKey: @“inputImage”];</p>
+<p>[gaussianBlurFilter setValue:[NSNumber numberWithFloat: 10] forKey: @“inputRadius”];</p>
+<p>CIImage *resultImage = [gaussianBlurFilter valueForKey: @“outputImage”];</p>
+<p>UIImage *endImage = [[UIImage alloc] initWithCIImage:resultImage];</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://macthemes2.net/forum/viewtopic.php?id=16783761">MacThemes / [Growl] iPhonesque — ala the dialog box on iPhone</a> <a class="permalink" href="/links/2008/01/macthemes-growl-iphonesque-ala-the-dialog-box-on-iphone/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/macthemes-growl-iphonesque-ala-the-dialog-box-on-iphone/"><time datetime="2008-01-30T10:31:00-0600">January 30, 2008</time></a> · <a href="/tags/design/">design</a>, <a href="/tags/growl/">growl</a>, <a href="/tags/inspiration/">inspiration</a>, <a href="/tags/macosx/">macosx</a>, <a href="/tags/theme/">theme</a></p>
+<article id="thing-2051" class="thing--link">
+  <aside>
+    <a href="/links/2013/05/fresh-strawberry-margarita-recipe-how-sweet-it-is/" title="Permanent link for this link">
+      2013.05.10 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://www.howsweeteats.com/2011/07/fresh-strawberry-margaritas/" target="_blank" rel="noreferrer" class="perma" title="Fresh Strawberry Margarita Recipe | How Sweet It Is">
+          Fresh Strawberry Margarita Recipe | How Sweet It Is
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p><em>recipe for one margarita, can easily be multiplied</em></p>
+<p>2 ounces Grand Marnier</p>
+<p>1 1/2 ounces Tequila</p>
+<p>2 ounces lime juice</p>
+<p>2 1/2 ounces strawberry simple syrup [recipe below]</p>
+<p>lime + fresh strawberries for garnish</p>
+<p>salt + sugar for the rim</p>
+<p>Rim the ridge of your glass with a lime wedge and dip in a mix of margarita salt + sugar [I used about 3 tablespoons salt to 2 teaspoons sugar]. Fill the glass with ice. In a cocktail shaker, combine tequila, grand marnier, simple syrup and lime juice with ice, and shake for about 30 seconds. Pour over ice and squeeze in lime slices and add a few strawberries.</p>
+<p>For strawberry simple syrup: combine equal parts sugar and water, bring to a boil and let sugar dissolve, then turn off heat and let cool completely. Combine 1 cup simply syrup + 1 1/2 cups slices strawberries in a blender and blend until combined. I don’t mind strawberry seeds, but if you’d like you can strain the mixture over a fine mesh strainer to remove the seeds.</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">jQuery Validation plugin</a> <a class="permalink" href="/links/2008/01/jquery-validation-plugin/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/jquery-validation-plugin/"><time datetime="2008-01-30T10:26:00-0600">January 30, 2008</time></a> · <a href="/tags/ajax/">ajax</a>, <a href="/tags/forms/">forms</a>, <a href="/tags/javascript/">javascript</a>, <a href="/tags/jquery/">jquery</a>, <a href="/tags/plugins/">plugins</a></p>
+<article id="thing-2050" class="thing--link">
+  <aside>
+    <a href="/links/2013/05/nuet-deep-elm-records/" title="Permanent link for this link">
+      2013.05.10 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://deepelmdigital.com/album/nuet" target="_blank" rel="noreferrer" class="perma" title="Nuet | Deep Elm Records">
+          Nuet | Deep Elm Records
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://www.voidspace.org.uk/python/articles/python_style_guide.shtml">Python Coding Style &amp; Standards</a> <a class="permalink" href="/links/2008/01/python-coding-style-standards/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/python-coding-style-standards/"><time datetime="2008-01-29T17:43:00-0600">January 29, 2008</time></a> · <a href="/tags/python/">python</a></p>
+<article id="thing-2049" class="thing--link">
+  <aside>
+    <a href="/links/2013/05/xcode-gaussian-blur-filter-reversal-ios-stack-overflow/" title="Permanent link for this link">
+      2013.05.10 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://stackoverflow.com/questions/14516032/gaussian-blur-filter-reversal-ios" target="_blank" rel="noreferrer" class="perma" title="xcode - Gaussian Blur Filter Reversal: iOS - Stack Overflow">
+          xcode - Gaussian Blur Filter Reversal: iOS - Stack Overflow
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://www.weightshift.com/">Weightshift - Art Direction, Design &amp; Code. Chicago IL.</a> <a class="permalink" href="/links/2008/01/weightshift-art-direction-design-code-chicago-il/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/weightshift-art-direction-design-code-chicago-il/"><time datetime="2008-01-25T18:18:00-0600">January 25, 2008</time></a> · <a href="/tags/design/">design</a>, <a href="/tags/inspiration/">inspiration</a>, <a href="/tags/portfolio/">portfolio</a></p>
+<article id="thing-2048" class="thing--link">
+  <aside>
+    <a href="/links/2013/05/sttwitter-lightweight-objective-c-wrapper-for-twitter-rest-api-11/" title="Permanent link for this link">
+      2013.05.07 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="https://github.com/nst/STTwitter" target="_blank" rel="noreferrer" class="perma" title="STTwitter - lightweight Objective-C wrapper for Twitter REST API 1.1">
+          STTwitter - lightweight Objective-C wrapper for Twitter REST API 1.1
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <p>Alternative to Twitter and Social frameworks. Supports Application-only authentication (<a href="https://dev.twitter.com/docs/auth/application-only-auth">https://dev.twitter.com/docs/auth/application-only-auth</a>).</p>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://www.oreillynet.com/onlamp/blog/2008/01/tlt_tiny_leopard_tip_permissio.html">TLT (Tiny Leopard Tip): Permissions Calculator Dashboard Widget - O&#39;Reilly ONLamp Blog</a> <a class="permalink" href="/links/2008/01/tlt-tiny-leopard-tip-permissions-calculator-dashboard-widget-oreilly-onlamp-blog/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/tlt-tiny-leopard-tip-permissions-calculator-dashboard-widget-oreilly-onlamp-blog/"><time datetime="2008-01-25T10:20:00-0600">January 25, 2008</time></a> · <a href="/tags/howto/">howto</a>, <a href="/tags/linux/">linux</a>, <a href="/tags/tips/">tips</a>, <a href="/tags/unix/">unix</a></p>
+<article id="thing-2047" class="thing--link">
+  <aside>
+    <a href="/links/2013/05/unheap-a-tidy-repository-of-jquery-plugins/" title="Permanent link for this link">
+      2013.05.03 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://www.unheap.com/" target="_blank" rel="noreferrer" class="perma" title="Unheap - A tidy repository of jQuery plugins">
+          Unheap - A tidy repository of jQuery plugins
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://poetry.lib.calpoly.edu/">Search PolyCat</a> <a class="permalink" href="/links/2008/01/search-polycat/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/search-polycat/"><time datetime="2008-01-23T18:57:00-0600">January 23, 2008</time></a> · <a href="/tags/design/">design</a>, <a href="/tags/inspiration/">inspiration</a>, <a href="/tags/library/">library</a></p>
+<article id="thing-2046" class="thing--link">
+  <aside>
+    <a href="/links/2013/05/beginning-opengl-es-20-with-glkit-part-1-ray-wenderlich/" title="Permanent link for this link">
+      2013.05.02 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://www.raywenderlich.com/5223/beginning-opengl-es-2-0-with-glkit-part-1" target="_blank" rel="noreferrer" class="perma" title="Beginning OpenGL ES 2.0 with GLKit Part 1 - Ray Wenderlich">
+          Beginning OpenGL ES 2.0 with GLKit Part 1 - Ray Wenderlich
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://www.xn--8ws00zhy3a.com/blog/2006/08/rss-dup-detection">RSS Duplicate Detection ･ 詹姆斯</a> <a class="permalink" href="/links/2008/01/rss-duplicate-detection/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/rss-duplicate-detection/"><time datetime="2008-01-22T23:40:00-0600">January 22, 2008</time></a> · <a href="/tags/atom/">atom</a>, <a href="/tags/howto/">howto</a>, <a href="/tags/rss/">rss</a>, <a href="/tags/tutorials/">tutorials</a></p>
+<article id="thing-2045" class="thing--link">
+  <aside>
+    <a href="/links/2013/05/briefs-ios-prototyping-tool/" title="Permanent link for this link">
+      2013.05.02 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://giveabrief.com/" target="_blank" rel="noreferrer" class="perma" title="Briefs - iOS Prototyping Tool">
+          Briefs - iOS Prototyping Tool
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://www.freewebs.com/flesler/jQuery.ScrollTo/">jQuery.ScrollTo</a> <a class="permalink" href="/links/2008/01/jqueryscrollto/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/jqueryscrollto/"><time datetime="2008-01-22T10:22:00-0600">January 22, 2008</time></a> · <a href="/tags/javascript/">javascript</a>, <a href="/tags/jquery/">jquery</a>, <a href="/tags/plugins/">plugins</a></p>
+<article id="thing-2044" class="thing--link">
+  <aside>
+    <a href="/links/2013/05/using-static-libraries-in-ios-pdf/" title="Permanent link for this link">
+      2013.05.01 &#167;
+    </a>
+  </aside>
 
+  <div class="content">
+    <div class="title">
+        <a href="http://developer.apple.com/library/ios/technotes/iOSStaticLibraries/iOSStaticLibraries.pdf" target="_blank" rel="noreferrer" class="perma" title="Using Static Libraries in iOS (PDF)">
+          Using Static Libraries in iOS (PDF)
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
 </article>
 
-<article class="entry entry-link">
-  <h2><a href="http://veerle.duoh.com/blog/comments/photoshop_vintage_effect/">Photoshop vintage effect | Veerle&#39;s blog</a> <a class="permalink" href="/links/2008/01/photoshop-vintage-effect-veerles-blog/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/photoshop-vintage-effect-veerles-blog/"><time datetime="2008-01-22T10:18:00-0600">January 22, 2008</time></a> · <a href="/tags/howto/">howto</a>, <a href="/tags/photography/">photography</a>, <a href="/tags/photoshop/">photoshop</a>, <a href="/tags/tutorials/">tutorials</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://www.uppercasegallery.ca/uppercase-journal/2008/1/18/collections.html">vintage typewriter ribbon tins</a> <a class="permalink" href="/links/2008/01/vintage-typewriter-ribbon-tins/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/vintage-typewriter-ribbon-tins/"><time datetime="2008-01-18T20:59:00-0600">January 18, 2008</time></a> · <a href="/tags/design/">design</a>, <a href="/tags/inspiration/">inspiration</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://drupal.org/project/devel">Devel | drupal.org</a> <a class="permalink" href="/links/2008/01/devel-drupalorg/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/devel-drupalorg/"><time datetime="2008-01-17T15:42:00-0600">January 17, 2008</time></a> · <a href="/tags/drupal/">drupal</a>, <a href="/tags/plugins/">plugins</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://www.flickr.com/commons">Flickr: The Commons</a> <a class="permalink" href="/links/2008/01/flickr-the-commons/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/flickr-the-commons/"><time datetime="2008-01-17T09:59:00-0600">January 17, 2008</time></a> · <a href="/tags/flickr/">flickr</a>, <a href="/tags/images/">images</a>, <a href="/tags/photography/">photography</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://www.smashingmagazine.com/2007/03/26/keep-it-simple-stupid-showcase-of-simple-and-clean-designs/">Keep It Simple, Stupid! | Design Showcase | Smashing Magazine</a> <a class="permalink" href="/links/2008/01/keep-it-simple-stupid-design-showcase-smashing-magazine/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/keep-it-simple-stupid-design-showcase-smashing-magazine/"><time datetime="2008-01-11T20:26:00-0600">January 11, 2008</time></a> · <a href="/tags/design/">design</a>, <a href="/tags/inspiration/">inspiration</a>, <a href="/tags/simplicity/">simplicity</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://groups.google.com/group/comp.lang.ruby/browse_thread/thread/76db7bfb05c083f4">Problem with LDAP::SSLConn.new</a> <a class="permalink" href="/links/2008/01/problem-with-ldapsslconnnew/">∞</a></h2>
-  <p>Is your server cert self-signed? As of version 2.1, OpenLDAP rejects self-signed certs. You can override this by adding “TLS_REQCERT     never” to your ldap.conf file (on the OpenLDAP client)</p>
-
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/problem-with-ldapsslconnnew/"><time datetime="2008-01-11T19:43:00-0600">January 11, 2008</time></a> · <a href="/tags/howto/">howto</a>, <a href="/tags/ldap/">ldap</a>, <a href="/tags/python/">python</a>, <a href="/tags/ruby/">ruby</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://ennerchi.com/projects/jrails">jRails - jQuery on Rails</a> <a class="permalink" href="/links/2008/01/jrails-jquery-on-rails/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/jrails-jquery-on-rails/"><time datetime="2008-01-10T10:23:00-0600">January 10, 2008</time></a> · <a href="/tags/ajax/">ajax</a>, <a href="/tags/javascript/">javascript</a>, <a href="/tags/jquery/">jquery</a>, <a href="/tags/plugins/">plugins</a>, <a href="/tags/rails/">rails</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://www.lukew.com/ff/entry.asp?611">Functioning Form - A Few Form Design Articles</a> <a class="permalink" href="/links/2008/01/functioning-form-a-few-form-design-articles/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/functioning-form-a-few-form-design-articles/"><time datetime="2008-01-10T09:04:00-0600">January 10, 2008</time></a> · <a href="/tags/design/">design</a>, <a href="/tags/forms/">forms</a>, <a href="/tags/usability/">usability</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://ilovetypography.com/2008/01/02/good-web-typography/">15 Great Examples of Web Typography | i love typography</a> <a class="permalink" href="/links/2008/01/15-great-examples-of-web-typography-i-love-typography/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/15-great-examples-of-web-typography-i-love-typography/"><time datetime="2008-01-08T10:10:00-0600">January 8, 2008</time></a> · <a href="/tags/design/">design</a>, <a href="/tags/inspiration/">inspiration</a>, <a href="/tags/typography/">typography</a></p>
-
-</article>
-
-<article class="entry entry-link">
-  <h2><a href="http://www.sysadminschronicles.com/archives/2007/8/31/upgrading_litespeed_web_server/">SysAdmins&#39; Chronicles. Upgrading PHP LSAPI on LiteSpeed</a> <a class="permalink" href="/links/2008/01/sysadmins-chronicles-upgrading-php-lsapi-on-litespeed/">∞</a></h2>
-  
-  <p class="meta">
-  <a class="permalink" href="/links/2008/01/sysadmins-chronicles-upgrading-php-lsapi-on-litespeed/"><time datetime="2008-01-07T18:02:00-0600">January 7, 2008</time></a> · <a href="/tags/howto/">howto</a>, <a href="/tags/http/">http</a>, <a href="/tags/litespeed/">litespeed</a>, <a href="/tags/php/">php</a>, <a href="/tags/tutorials/">tutorials</a></p>
-
-</article>
-
-<nav class="pagination">
-<a href="/page/99/">← Newer</a>  <span>Page 100 of 152</span>
-<a href="/page/101/">Older →</a></nav>
+<div class="pagination">
+<a href="/page/99/">&larr; Previous</a>  <a href="/page/101/">Next &rarr;</a></div>
   </main>
-  <footer class="site-footer">
-    <p>Matt</p>
+
+  <footer>
+    <img src="/octopus.svg" alt="It's an octopus">
+
+    <span>
+      &copy;
+      2026
+      &middot;
+      <a href="https://pushcartlabs.com/">made by matt grayson</a>
+    </span>
   </footer>
 </body>
 </html>
