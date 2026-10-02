@@ -5,7 +5,7 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-09-27T06:20:39-0500</updated>
+  <updated>2026-10-02T05:52:04-0500</updated>
   <author><name>Matt</name></author>
     <entry>
     <title>Unix System Philosophy</title>
@@ -97,7 +97,7 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <link href="https://alexwennerberg.com/blog/2026-01-25-slop.html"/>
     <id>https://somethinglater.com/links/2026/01/ai-code-and-software-craft/</id>
     <published>2026-01-27T05:13:00-0600</published>
-    <updated>2026-01-27T05:13:49-0600</updated>
+    <updated>2026-10-02T05:52:04-0500</updated>
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;It is true that most code simply is not very good, especially at large companies. And we can continue to do not very good software much more quickly and effectively with AI. But AI cannot solve the main systemic problem in the software industry, which is that, in my view, we still haven’t quite figured out how to build software well at scale. But to do this requires a sense of craft and real human critical thought.&lt;/p&gt;
 &lt;/blockquote&gt;
