@@ -5,9 +5,18 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-10-02T15:56:36-0500</updated>
+  <updated>2026-10-06T19:32:02-0500</updated>
   <author><name>Matt</name></author>
     <entry>
+    <title>Let every trial teach me more of thy peace</title>
+    <link href="https://somethinglater.com/2026/10/let-every-trial-teach-me-more-of-thy-peace/"/>
+    <id>https://somethinglater.com/2026/10/let-every-trial-teach-me-more-of-thy-peace/</id>
+    <published>2026-10-06T19:32:02-0500</published>
+    <updated>2026-10-06T19:32:02-0500</updated>
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/media/d68a02af83e2/pasted-image.png&quot; alt=&quot;&quot; width=&quot;434&quot; height=&quot;227&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>Unix System Philosophy</title>
     <link href="https://somethinglater.com/2026/09/unix/"/>
     <id>https://somethinglater.com/2026/09/unix/</id>
@@ -226,15 +235,6 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <content type="html">&lt;blockquote&gt;
 &lt;p&gt;Building a fully-feature docs site with Astro and Starlight, including authentication and CMS support.&lt;/p&gt;
 &lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Landscaping with Native Plants</title>
-    <link href="https://www.tnipc.org/landscaping/"/>
-    <id>https://somethinglater.com/links/2025/10/landscaping-with-native-plants/</id>
-    <published>2025-10-12T11:07:00-0500</published>
-    <updated>2025-11-22T15:35:16-0600</updated>
-    <content type="html">&lt;p&gt;To promote the use of native plants in gardens and landscapes, TN-IPC developed a set of three brochures in the 1990s, each designed specifically for East, Middle, and West Tennessee.&lt;/p&gt;
 </content>
   </entry>
 </feed>
