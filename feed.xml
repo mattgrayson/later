@@ -17,15 +17,6 @@
 </content>
   </entry>
   <entry>
-    <title>Let every trial teach me more of thy peace</title>
-    <link href="https://somethinglater.com/2026/10/let-every-trial-teach-me-more-of-thy-peace/"/>
-    <id>https://somethinglater.com/2026/10/let-every-trial-teach-me-more-of-thy-peace/</id>
-    <published>2026-10-06T19:32:02-0500</published>
-    <updated>2026-10-06T19:32:02-0500</updated>
-    <content type="html">&lt;p&gt;&lt;img src=&quot;/media/d68a02af83e2/pasted-image.png&quot; alt=&quot;&quot; width=&quot;434&quot; height=&quot;227&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
     <title>Unix System Philosophy</title>
     <link href="https://somethinglater.com/2026/09/unix/"/>
     <id>https://somethinglater.com/2026/09/unix/</id>
@@ -234,5 +225,16 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <published>2025-11-11T15:02:00-0600</published>
     <updated>2025-12-13T15:10:34-0600</updated>
     <content type="html"></content>
+  </entry>
+  <entry>
+    <title>Hybrid Frontend Architecture with Astro and Starlight</title>
+    <link href="https://frontendatscale.com/blog/hybrid-frontend-architecture/"/>
+    <id>https://somethinglater.com/links/2025/11/hybrid-frontend-architecture-with-astro-and-starlight/</id>
+    <published>2025-11-04T12:53:00-0600</published>
+    <updated>2025-11-26T09:57:01-0600</updated>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;Building a fully-feature docs site with Astro and Starlight, including authentication and CMS support.&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
   </entry>
 </feed>
