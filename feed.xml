@@ -5,9 +5,21 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-10-12T07:26:21-0500</updated>
+  <updated>2026-10-12T15:42:33-0500</updated>
   <author><name>Matt</name></author>
     <entry>
+    <title>&#39;AI&#39; is Not a Tool</title>
+    <link href="https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b11c02"/>
+    <id>https://somethinglater.com/links/2026/10/ai-is-not-a-tool/</id>
+    <published>2026-10-12T15:42:33-0500</published>
+    <updated>2026-10-12T15:42:33-0500</updated>
+    <content type="html">&lt;blockquote&gt;
+&lt;p&gt;LLMs are not tools. I know many people use the phrase “just tools” simply to indicate “they are what you make of them”. Except that’s not true. Automation has intrinsic properties and differences from tools that you ignore at your peril.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;– Rich Hickey&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>The Peace of Wild Things</title>
     <link href="https://somethinglater.com/2026/10/the-peace-of-wild-things/"/>
     <id>https://somethinglater.com/2026/10/the-peace-of-wild-things/</id>
@@ -226,13 +238,5 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <updated>2025-12-13T16:00:03-0600</updated>
     <content type="html">&lt;p&gt;When businesses start to realize that they’re paying vast amounts to get LLMs to do tasks that could be accomplished by a old-school coder writing a regex script … “I do think we’re about to see a lot of companies realize that a thinking model connected to an MCP server is way more expensive than just paying someone to write a bash script. Starting now, you’ll be able to make a career out of un-LLM-ifying applications.”&lt;/p&gt;
 </content>
-  </entry>
-  <entry>
-    <title>Reading Genesis Well</title>
-    <link href="https://somethinglater.com/books/reading-genesis-well/"/>
-    <id>https://somethinglater.com/books/reading-genesis-well/</id>
-    <published>2025-11-11T15:02:00-0600</published>
-    <updated>2025-12-13T15:10:34-0600</updated>
-    <content type="html"></content>
   </entry>
 </feed>

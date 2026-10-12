@@ -52,6 +52,58 @@
       </search>
     </section>
 
+<article id="thing-2716" class="thing--link">
+  <aside>
+    <a href="/links/2019/07/how-to-setup-local-host-networking-with-virtualbox/" title="Permanent link for this link">
+      2019.07.18 &#167;
+    </a>
+  </aside>
+
+  <div class="content">
+    <div class="title">
+        <a href="https://serverfault.com/a/333584" target="_blank" rel="noreferrer" class="perma" title="How to Setup Local Host Networking with VirtualBox">
+          How to Setup Local Host Networking with VirtualBox
+        </a>
+        <span class="decor">
+          &#8677;
+        </span>
+    </div>
+
+
+    <div class="details">
+      <ol>
+<li>
+<p>Setup the virtualbox to use 2 adapters:</p>
+<ul>
+<li>The first adapter is set to NAT (that will give you the internet connection).</li>
+<li>The second adapter is set to host only.</li>
+</ul>
+</li>
+<li>
+<p>Start the virtual machine and assign a static IP for the second adapter in Ubuntu (for instance 192.168.56.56). The host Windows will have 192.168.56.1 as IP for the internal network (VirtualBox Host-Only Network is the name in network connections in Windows). What this will give you is being able to access the apache server on ubuntu, from windows, by going to 192.168.56.56. Also, Ubuntu will have internet access, since the first adapter (set to NAT) will take care of that.</p>
+</li>
+<li>
+<p>Now, to make the connection available both ways (accessing the windows host from the ubuntu guest) there’s still one more step to be performed. Windows will automatically add the virtualbox host-only network to the list of public networks and that cannot be changed. This entails that the firewall will prevent proper access.</p>
+</li>
+<li>
+<p>To overcome this and not make any security breaches in your setup:</p>
+<ul>
+<li>go to the windows firewall section, in control panel,</li>
+<li>click on advanced settings. In the page that pops up,</li>
+<li>click on inbound rules (left column), then on new rule (right column). Chose custom rule, set the rule to allow all programs, and any protocol. For the scope, add in the first box (local IP addresses) 192.168.56.1, and in the second box (remote IP) 192.168.56.56. Click next, select allow the connection, next, check all profiles, next, give it a name and save.</li>
+</ul>
+</li>
+</ol>
+
+          </div>
+
+
+    <a class="kind" title="See all links" href="/links/">
+      link
+    </a>
+  </div>
+</article>
+
 <article id="thing-2715" class="thing--link">
   <aside>
     <a href="/links/2019/07/frontend-design-react-and-a-bridge-over-the-great-divide/" title="Permanent link for this link">
@@ -300,32 +352,6 @@
     <div class="title">
         <a href="https://umamimart.com/collections/kitchen-coffee-and-tea-mugs-cups-and-bowls/products/black-mug-small" target="_blank" rel="noreferrer" class="perma" title="Hasami Black Mug Small">
           Hasami Black Mug Small
-        </a>
-        <span class="decor">
-          &#8677;
-        </span>
-    </div>
-
-
-
-
-    <a class="kind" title="See all links" href="/links/">
-      link
-    </a>
-  </div>
-</article>
-
-<article id="thing-2706" class="thing--link">
-  <aside>
-    <a href="/links/2019/07/how-to-tune-your-waf-installation-to-reduce-false-positives/" title="Permanent link for this link">
-      2019.07.09 &#167;
-    </a>
-  </aside>
-
-  <div class="content">
-    <div class="title">
-        <a href="https://www.oreilly.com/ideas/how-to-tune-your-waf-installation-to-reduce-false-positives" target="_blank" rel="noreferrer" class="perma" title="How to tune your WAF installation to reduce false positives">
-          How to tune your WAF installation to reduce false positives
         </a>
         <span class="decor">
           &#8677;
