@@ -5,9 +5,18 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-10-12T15:42:33-0500</updated>
+  <updated>2026-10-17T12:46:38-0500</updated>
   <author><name>Matt</name></author>
     <entry>
+    <title>He just thinks by himself too much</title>
+    <link href="https://somethinglater.com/quotes/3056/"/>
+    <id>https://somethinglater.com/quotes/3056/</id>
+    <published>2026-10-17T12:46:38-0500</published>
+    <updated>2026-10-17T12:46:38-0500</updated>
+    <content type="html">&lt;p&gt;Now and then a fellow gets to thinking about it. Not often, though. Which is a good thing. For the Lord aimed for him to do and not to spend too much time thinking, because his brain it’s like a piece of machinery: it won’t stand a whole lot of racking. It’s best when it all runs along the same, doing the day’s work and not no one part used no more than needful. I have said and I say again, that’s ever living thing the matter with Darl: he just thinks by himself too much. Cora’s right when she says all he needs is a wife to straighten&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>&#39;AI&#39; is Not a Tool</title>
     <link href="https://gist.github.com/svieira/619d60dea942a8d4498cba3bb6b11c02"/>
     <id>https://somethinglater.com/links/2026/10/ai-is-not-a-tool/</id>
@@ -228,15 +237,6 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
 &lt;blockquote&gt;
 &lt;p&gt;According to award-winning journalist and historian Colin Woodard, North America is made up of eleven distinct nations, each with its own unique historical roots. In American Nations he takes readers on a journey through the history of our fractured continent, offering a revolutionary and revelatory take on American identity, and how the conflicts between them have shaped our past and continue to mold our future.&lt;/p&gt;
 &lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Old-School Coder Writing a Regex</title>
-    <link href="https://somethinglater.com/quotes/3028/"/>
-    <id>https://somethinglater.com/quotes/3028/</id>
-    <published>2025-11-26T10:04:00-0600</published>
-    <updated>2025-12-13T16:00:03-0600</updated>
-    <content type="html">&lt;p&gt;When businesses start to realize that they’re paying vast amounts to get LLMs to do tasks that could be accomplished by a old-school coder writing a regex script … “I do think we’re about to see a lot of companies realize that a thinking model connected to an MCP server is way more expensive than just paying someone to write a bash script. Starting now, you’ll be able to make a career out of un-LLM-ifying applications.”&lt;/p&gt;
 </content>
   </entry>
 </feed>
