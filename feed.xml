@@ -5,9 +5,17 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-10-28T20:54:25-0500</updated>
+  <updated>2026-10-28T20:55:54-0500</updated>
   <author><name>Matt</name></author>
     <entry>
+    <title>Manton Reece</title>
+    <link href="https://somethinglater.com/manton-reece/"/>
+    <id>https://somethinglater.com/manton-reece/</id>
+    <published>2026-10-28T20:55:54-0500</published>
+    <updated>2026-10-28T20:55:54-0500</updated>
+    <content type="html"></content>
+  </entry>
+  <entry>
     <title>Alan Jacobs</title>
     <link href="https://somethinglater.com/alan-jacobs/"/>
     <id>https://somethinglater.com/alan-jacobs/</id>
@@ -213,16 +221,6 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <published>2025-12-20T10:00:00-0600</published>
     <updated>2025-12-20T10:04:14-0600</updated>
     <content type="html">&lt;p&gt;The myth of technological and political and social inevitability is a powerful tranquilizer of the conscience. Its service is to remove responsibility from the shoulders of everyone who truly believes in it. But in fact there are actors.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Modern Illustration</title>
-    <link href="https://www.modernillustration.org"/>
-    <id>https://somethinglater.com/links/2025/12/modern-illustration/</id>
-    <published>2025-12-19T15:57:00-0600</published>
-    <updated>2025-12-19T15:59:04-0600</updated>
-    <content type="html">&lt;p&gt;&lt;img src=&quot;/media/7f5ecf8818dc/sanka.jpg&quot; alt=&quot;&quot; width=&quot;1200&quot; height=&quot;1200&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;An archive of illustration from c.1950-1975, shining a spotlight on pioneering illustrators and their work.&lt;/p&gt;
 </content>
   </entry>
 </feed>
