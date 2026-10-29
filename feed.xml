@@ -5,9 +5,17 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-10-27T06:50:40-0500</updated>
+  <updated>2026-10-28T20:54:25-0500</updated>
   <author><name>Matt</name></author>
     <entry>
+    <title>Alan Jacobs</title>
+    <link href="https://somethinglater.com/alan-jacobs/"/>
+    <id>https://somethinglater.com/alan-jacobs/</id>
+    <published>2026-10-28T20:54:25-0500</published>
+    <updated>2026-10-28T20:54:25-0500</updated>
+    <content type="html"></content>
+  </entry>
+  <entry>
     <title>Bourbon Glass</title>
     <link href="https://us.denverandliely.com/products/bourbon-glass"/>
     <id>https://somethinglater.com/links/2026/10/bourbon-glass/</id>
@@ -215,25 +223,6 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <updated>2025-12-19T15:59:04-0600</updated>
     <content type="html">&lt;p&gt;&lt;img src=&quot;/media/7f5ecf8818dc/sanka.jpg&quot; alt=&quot;&quot; width=&quot;1200&quot; height=&quot;1200&quot; loading=&quot;lazy&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;An archive of illustration from c.1950-1975, shining a spotlight on pioneering illustrators and their work.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Simon Willison ported JustHTML from Python to JavaScript with [AI] in 4.5 hours</title>
-    <link href="https://simonwillison.net/2025/Dec/15/porting-justhtml/"/>
-    <id>https://somethinglater.com/links/2025/12/simon-willison-ported-justhtml-from-python-to-javascript-with-ai-in-45-hours/</id>
-    <published>2025-12-18T19:00:00-0600</published>
-    <updated>2025-12-18T19:00:00-0600</updated>
-    <content type="html">&lt;p&gt;Simon ported a Python HTML5 parsing library to JavaScript with Codex CLI and GPT-5.2. Lots of interesting details but the most interesting part to me is the questions he had at the end:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;Does this library represent a legal violation of copyright of either the Rust library or the Python one?&lt;/li&gt;
-&lt;li&gt;Even if this is legal, is it ethical to build a library in this way?&lt;/li&gt;
-&lt;li&gt;Does this format of development hurt the open source ecosystem?&lt;/li&gt;
-&lt;li&gt;Can I even assert copyright over this, given how much of the work was produced by the LLM?&lt;/li&gt;
-&lt;li&gt;Is it responsible to publish software libraries built in this way?&lt;/li&gt;
-&lt;li&gt;How much better would this library be if an expert team hand crafted it over the course of several months?&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
 </content>
   </entry>
 </feed>
