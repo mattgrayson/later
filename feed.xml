@@ -5,9 +5,25 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-10-31T10:38:30-0500</updated>
+  <updated>2026-10-31T10:55:12-0500</updated>
   <author><name>Matt</name></author>
     <entry>
+    <title>Jerdo Santo</title>
+    <link href="https://somethinglater.com/follow/jerdo-santo/"/>
+    <id>https://somethinglater.com/follow/jerdo-santo/</id>
+    <published>2026-10-31T10:56:11-0500</published>
+    <updated>2026-10-31T10:55:12-0500</updated>
+    <content type="html"></content>
+  </entry>
+  <entry>
+    <title>John Gruber</title>
+    <link href="https://somethinglater.com/follow/john-gruber/"/>
+    <id>https://somethinglater.com/follow/john-gruber/</id>
+    <published>2026-10-31T10:56:11-0500</published>
+    <updated>2026-10-31T10:51:03-0500</updated>
+    <content type="html"></content>
+  </entry>
+  <entry>
     <title>Simon Willison</title>
     <link href="https://somethinglater.com/follow/simon-willison/"/>
     <id>https://somethinglater.com/follow/simon-willison/</id>
@@ -188,30 +204,5 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <published>2026-04-29T06:15:00-0500</published>
     <updated>2026-04-29T14:16:15-0500</updated>
     <content type="html"></content>
-  </entry>
-  <entry>
-    <title>AI code and software craft</title>
-    <link href="https://alexwennerberg.com/blog/2026-01-25-slop.html"/>
-    <id>https://somethinglater.com/links/2026/01/ai-code-and-software-craft/</id>
-    <published>2026-01-27T05:13:00-0600</published>
-    <updated>2026-10-02T05:52:04-0500</updated>
-    <content type="html">&lt;blockquote&gt;
-&lt;p&gt;It is true that most code simply is not very good, especially at large companies. And we can continue to do not very good software much more quickly and effectively with AI. But AI cannot solve the main systemic problem in the software industry, which is that, in my view, we still haven’t quite figured out how to build software well at scale. But to do this requires a sense of craft and real human critical thought.&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Velox</title>
-    <link href="https://github.com/velox-apps/velox"/>
-    <id>https://somethinglater.com/links/2026/01/velox/</id>
-    <published>2026-01-27T04:57:00-0600</published>
-    <updated>2026-01-27T05:12:55-0600</updated>
-    <content type="html">&lt;p&gt;A port of Tauri to Swift by Miguel de Icaza:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;most of the heavy lifting we get directly from the dependencies I brought unmodified from Tauri&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;It’s to Swift what Tauri is to Rust. Wails is to Go. etc.&lt;/p&gt;
-&lt;p&gt;Only targets macOS and iOS but is &lt;a href=&quot;https://github.com/velox-apps/velox/issues/1&quot;&gt;open to targeting other platforms&lt;/a&gt;.&lt;/p&gt;
-</content>
   </entry>
 </feed>
