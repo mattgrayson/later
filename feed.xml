@@ -5,20 +5,28 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-10-28T20:55:54-0500</updated>
+  <updated>2026-10-31T06:21:45-0500</updated>
   <author><name>Matt</name></author>
     <entry>
+    <title>John Nunemaker</title>
+    <link href="https://somethinglater.com/follow/john-nunemaker/"/>
+    <id>https://somethinglater.com/follow/john-nunemaker/</id>
+    <published>2026-10-31T06:21:45-0500</published>
+    <updated>2026-10-31T06:21:45-0500</updated>
+    <content type="html"></content>
+  </entry>
+  <entry>
     <title>Manton Reece</title>
-    <link href="https://somethinglater.com/manton-reece/"/>
-    <id>https://somethinglater.com/manton-reece/</id>
+    <link href="https://somethinglater.com/follow/manton-reece/"/>
+    <id>https://somethinglater.com/follow/manton-reece/</id>
     <published>2026-10-28T20:55:54-0500</published>
     <updated>2026-10-28T20:55:54-0500</updated>
     <content type="html"></content>
   </entry>
   <entry>
     <title>Alan Jacobs</title>
-    <link href="https://somethinglater.com/alan-jacobs/"/>
-    <id>https://somethinglater.com/alan-jacobs/</id>
+    <link href="https://somethinglater.com/follow/alan-jacobs/"/>
+    <id>https://somethinglater.com/follow/alan-jacobs/</id>
     <published>2026-10-28T20:54:25-0500</published>
     <updated>2026-10-28T20:54:25-0500</updated>
     <content type="html"></content>
@@ -212,15 +220,6 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
 &lt;li&gt;Disk insights: DaisyDisk but for the terminal&lt;/li&gt;
 &lt;li&gt;Live monitoring: iStat Menus but for the terminal&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>The Myth of Technological Inevitability</title>
-    <link href="https://somethinglater.com/quotes/3032/"/>
-    <id>https://somethinglater.com/quotes/3032/</id>
-    <published>2025-12-20T10:00:00-0600</published>
-    <updated>2025-12-20T10:04:14-0600</updated>
-    <content type="html">&lt;p&gt;The myth of technological and political and social inevitability is a powerful tranquilizer of the conscience. Its service is to remove responsibility from the shoulders of everyone who truly believes in it. But in fact there are actors.&lt;/p&gt;
 </content>
   </entry>
 </feed>

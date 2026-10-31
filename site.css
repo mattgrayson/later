@@ -162,6 +162,7 @@ section {
             display: flex;
             gap: 1rem;
             list-style: none;
+            margin-bottom: 2rem;
             padding: 0;
         }
     }
