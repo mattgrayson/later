@@ -5,9 +5,18 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-10-31T06:21:45-0500</updated>
+  <updated>2026-10-31T06:45:10-0500</updated>
   <author><name>Matt</name></author>
     <entry>
+    <title>Don&#39;t Make a Human Do What AI Is Amazing At</title>
+    <link href="https://somethinglater.com/quotes/dont-make-a-human-do-what-ai-is-amazing-at/"/>
+    <id>https://somethinglater.com/quotes/dont-make-a-human-do-what-ai-is-amazing-at/</id>
+    <published>2026-10-31T06:45:10-0500</published>
+    <updated>2026-10-31T06:45:10-0500</updated>
+    <content type="html">&lt;p&gt;Letting AI do what it’s great at. AI is amazing at a tight, focused, 40 line change with a test that proves it. It’s a lot less amazing at 3,000 line PRs. I know because I kept making them. I’d keep looping review and fix, trying to get to zero findings. Sometimes it never got there. It just kept finding things, the code kept getting more complicated, and pretty soon I had a 3,000 line PR that made my stomach hurt and I was afraid to merge. I never want to be there again. So the whole thing is designed around small.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>John Nunemaker</title>
     <link href="https://somethinglater.com/follow/john-nunemaker/"/>
     <id>https://somethinglater.com/follow/john-nunemaker/</id>
@@ -205,21 +214,6 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <published>2026-01-13T06:02:00-0600</published>
     <updated>2026-01-13T06:03:30-0600</updated>
     <content type="html">&lt;p&gt;Interesting (but experimental) sandboxing tool from Anthropic for enforcing filesystem and network restrictions on arbitrary processes at the OS level, without requiring a container.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Mole</title>
-    <link href="https://github.com/tw93/Mole"/>
-    <id>https://somethinglater.com/links/2026/01/mole/</id>
-    <published>2026-01-06T07:18:00-0600</published>
-    <updated>2026-01-06T07:21:13-0600</updated>
-    <content type="html">&lt;p&gt;An almost-too-good-to-be-true kind of tool:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Deep cleaning: Scans+removes caches, logs, and browser leftovers&lt;/li&gt;
-&lt;li&gt;Smart uninstaller: removes apps along with launch agents, preferences, and hidden remnants&lt;/li&gt;
-&lt;li&gt;Disk insights: DaisyDisk but for the terminal&lt;/li&gt;
-&lt;li&gt;Live monitoring: iStat Menus but for the terminal&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>

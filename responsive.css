@@ -17,8 +17,15 @@
         padding: 1.5rem 0;
 
         nav {
-            h3, ul {
-                display: initial;
+            h3 {
+                display: block;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+                margin-bottom: 2rem;
             }
         }
     }
