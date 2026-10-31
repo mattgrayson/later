@@ -5,9 +5,17 @@
   <link href="https://somethinglater.com/"/>
   <link rel="self" href="https://somethinglater.com/feed.xml"/>
   <id>https://somethinglater.com/</id>
-  <updated>2026-10-31T06:45:10-0500</updated>
+  <updated>2026-10-31T10:26:55-0500</updated>
   <author><name>Matt</name></author>
     <entry>
+    <title>Robin Sloan</title>
+    <link href="https://somethinglater.com/follow/robin-sloan/"/>
+    <id>https://somethinglater.com/follow/robin-sloan/</id>
+    <published>2026-10-31T10:26:55-0500</published>
+    <updated>2026-10-31T10:26:55-0500</updated>
+    <content type="html"></content>
+  </entry>
+  <entry>
     <title>Don&#39;t Make a Human Do What AI Is Amazing At</title>
     <link href="https://somethinglater.com/quotes/dont-make-a-human-do-what-ai-is-amazing-at/"/>
     <id>https://somethinglater.com/quotes/dont-make-a-human-do-what-ai-is-amazing-at/</id>
@@ -205,15 +213,6 @@ The drive home was long (9 hrs) but uneventful with stops in Champaign, IL (for 
     <published>2026-01-18T08:55:00-0600</published>
     <updated>2026-01-18T08:59:05-0600</updated>
     <content type="html">&lt;p&gt;I believe that many who find that “nothing happens” when they sit down, or kneel down, to a book of devotion, would find that the heart sings unbidden while they are working their way through a tough bit of theology with a pipe in their teeth and a pencil in their hand.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Anthropic Sandbox Runtime (srt)</title>
-    <link href="https://github.com/anthropic-experimental/sandbox-runtime"/>
-    <id>https://somethinglater.com/links/2026/01/anthropic-sandbox-runtime-srt/</id>
-    <published>2026-01-13T06:02:00-0600</published>
-    <updated>2026-01-13T06:03:30-0600</updated>
-    <content type="html">&lt;p&gt;Interesting (but experimental) sandboxing tool from Anthropic for enforcing filesystem and network restrictions on arbitrary processes at the OS level, without requiring a container.&lt;/p&gt;
 </content>
   </entry>
 </feed>
